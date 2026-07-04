@@ -6,6 +6,8 @@ last_name: Carballo
 
 superuser: true
 
+weight: 2
+
 role: Investigador – Grupo Voz Maya
 
 organizations:

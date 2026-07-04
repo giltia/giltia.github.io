@@ -14,7 +14,7 @@ sections:
           - Estudiantes de Posgrado
           - Colaboradores
           - Alumni
-      sort_by: Params.last_name
+      sort_by: Params.weight
       sort_ascending: true
     design:
       show_interests: true

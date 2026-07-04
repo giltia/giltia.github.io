@@ -26,17 +26,13 @@ Sitio web académico para el **Grupo de Investigación Voz Maya** de CentroGeo, 
 - [x] Workflow GitHub Actions para deploy automático a GitHub Pages
 - [x] Commit inicial en rama `main`
 - [x] Sitio verificado: compila sin errores (53 páginas ES + 18 páginas EN)
+- [x] Repositorio publicado en GitHub y desplegado vía GitHub Actions
+- [x] Perfil de Alejandro Molina Villegas (líder del grupo) agregado al equipo
 
-### Pendiente – pasos del usuario
+### Pendiente
 
-- [ ] Crear repositorio `vozmaya` en GitHub (público, sin inicializar)
-- [ ] Subir el código:
-  ```bash
-  cd /home/jaz/Documents/opencode/web/centrogeo/vozmaya
-  git remote add origin https://github.com/jazielcarballo/vozmaya.git
-  git push -u origin main
-  ```
-- [ ] En GitHub: `Settings → Pages → Source → GitHub Actions`
+- [ ] La página de Equipo en inglés (`/vozmaya/en/people/`) no muestra perfiles: los autores viven en `content/authors/` (idioma ES) y el sitio EN usa `content/en/` como `contentDir`, por lo que Hugo no los encuentra. Pendiente decidir si se traducen los perfiles o se comparten entre idiomas.
+- [ ] Agregar correo de contacto público de Alejandro Molina Villegas (no se encontró uno público; el de su perfil en CentroGeo está protegido contra spam)
 
 ---
 
