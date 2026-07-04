@@ -8,24 +8,35 @@ superuser: true
 
 weight: 2
 
-role: Investigador – Grupo Voz Maya
+role: Especialista en IA aplicada a la educación
 
 organizations:
   - name: CentroGeo
     url: 'https://www.centrogeo.org.mx'
+  - name: Universidad Anáhuac Mayab
+    url: 'https://www.anahuacmayab.mx'
 
-bio: Investigador en CentroGeo enfocado en el desarrollo de tecnología de procesamiento de lenguaje natural para la lengua maya yucateca.
+bio: Doctorando en el Laboratorio Nacional de Geointeligencia de CentroGeo, donde investiga el uso de la inteligencia artificial para la preservación del maya yucateco.
 
 interests:
   - Procesamiento de Lenguaje Natural
   - Lenguas Originarias
-  - Tecnología del Habla
-  - Lingüística Computacional
+  - Inteligencia Artificial Generativa
+  - IA Aplicada a la Educación
 
 education:
   courses:
-    - course: ''
-      institution: ''
+    - course: Doctorado en Geointeligencia (en curso)
+      institution: CentroGeo
+      year:
+    - course: Maestría en Ingeniería
+      institution: Tecnológico Nacional de México
+      year:
+    - course: Ingeniería en Sistemas
+      institution: Tecnológico Nacional de México
+      year:
+    - course: Especialidad en Docencia
+      institution: Universidad Autónoma de Yucatán (UADY)
       year:
 
 social:
@@ -35,6 +46,9 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/jazielcarballo
+  - icon: globe
+    icon_pack: fas
+    link: 'https://jazielcarballo.com'
 
 email: 'jaziel.carballo@gmail.com'
 
@@ -44,4 +58,4 @@ user_groups:
   - Investigadores Principales
 ---
 
-Investigador del Grupo Voz Maya en CentroGeo. Su trabajo se centra en el desarrollo de recursos y herramientas de procesamiento de lenguaje natural para la lengua maya yucateca, contribuyendo a la preservación y digitalización de lenguas originarias de México.
+Doctorando en el Laboratorio Nacional de Geointeligencia de CentroGeo, donde investiga el uso de la inteligencia artificial para la preservación del maya yucateco. Ingeniero en Sistemas y Maestro en Ingeniería por el Tecnológico Nacional de México, con especialidad en Docencia por la UADY. Educador certificado por Google Education para Gemini y exbecario del programa Teaching With Purpose de Harvard Business Publishing. En 2026 fue aceptado en la Lisbon Machine Learning School (LxMLS), en Lisboa, Portugal, de la red europea ELLIS dedicada al aprendizaje automático profundo. Con más de 10 años de experiencia, actualmente es docente en la Universidad Anáhuac Mayab.
