@@ -8,7 +8,7 @@ superuser: true
 
 weight: 2
 
-role: Especialista en IA aplicada a la educación
+role: AI in Education Specialist
 
 organizations:
   - name: CentroGeo
@@ -16,26 +16,26 @@ organizations:
   - name: Universidad Anáhuac Mayab
     url: 'https://www.anahuacmayab.mx'
 
-bio: Doctorando en el Laboratorio Nacional de Geointeligencia de CentroGeo, donde investiga el uso de la inteligencia artificial para la preservación del maya yucateco.
+bio: PhD candidate at CentroGeo's National Geointelligence Laboratory, researching the use of artificial intelligence for the preservation of Yucatec Maya.
 
 interests:
-  - Procesamiento de Lenguaje Natural
-  - Lenguas Originarias
-  - Inteligencia Artificial Generativa
-  - IA Aplicada a la Educación
+  - Natural Language Processing
+  - Indigenous Languages
+  - Generative Artificial Intelligence
+  - AI Applied to Education
 
 education:
   courses:
-    - course: Doctorado en Geointeligencia (en curso)
+    - course: PhD in Geointelligence (in progress)
       institution: CentroGeo
       year:
-    - course: Maestría en Ingeniería
+    - course: Master's in Engineering
       institution: Tecnológico Nacional de México
       year:
-    - course: Ingeniería en Sistemas
+    - course: Bachelor's in Systems Engineering
       institution: Tecnológico Nacional de México
       year:
-    - course: Especialidad en Docencia
+    - course: Specialization in Teaching
       institution: Universidad Autónoma de Yucatán (UADY)
       year:
 
@@ -58,4 +58,4 @@ user_groups:
   - Investigadores Principales
 ---
 
-Doctorando en el Laboratorio Nacional de Geointeligencia de CentroGeo, donde investiga el uso de la inteligencia artificial para la preservación del maya yucateco. Ingeniero en Sistemas y Maestro en Ingeniería por el Tecnológico Nacional de México, con especialidad en Docencia por la UADY. Educador certificado por Google Education para Gemini y exbecario del programa Teaching With Purpose de Harvard Business Publishing. En 2026 fue aceptado en la Lisbon Machine Learning School (LxMLS), en Lisboa, Portugal, de la red europea ELLIS dedicada al aprendizaje automático profundo. Con más de 10 años de experiencia, actualmente es docente en la Universidad Anáhuac Mayab.
+PhD candidate at CentroGeo's National Geointelligence Laboratory, researching the use of artificial intelligence for the preservation of Yucatec Maya. Systems Engineer and Master in Engineering from Tecnológico Nacional de México, with a teaching specialization from UADY. Certified Google Education Educator for Gemini and former Teaching With Purpose fellow at Harvard Business Publishing. In 2026 he was accepted to the Lisbon Machine Learning School (LxMLS), part of the European ELLIS network for deep machine learning. With over 10 years of experience, he currently teaches at Universidad Anáhuac Mayab.

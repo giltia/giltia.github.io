@@ -1,5 +1,5 @@
 ---
-title: Equipo
+title: People
 date: 2024-01-01
 
 type: landing
@@ -7,7 +7,7 @@ type: landing
 sections:
   - block: people
     content:
-      title: Nuestro Equipo
+      title: Meet the Team
       user_groups:
           - Investigadores Principales
           - Investigadores

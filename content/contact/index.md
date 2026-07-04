@@ -1,5 +1,5 @@
 ---
-title: Contacto
+title: Contact
 date: 2024-01-01
 
 type: landing
@@ -7,16 +7,16 @@ type: landing
 sections:
   - block: contact
     content:
-      title: Contacto
+      title: Contact
       text: |-
-        ¿Tienes preguntas sobre el proyecto Voz Maya o te interesa colaborar con nosotros? Escríbenos.
+        Have questions about the Voz Maya project or interested in collaborating with us? Get in touch.
       email: vozmaya@centrogeo.edu.mx
       address:
         street: Contoy 137, Lomas de Padierna
-        city: Ciudad de México
+        city: Mexico City
         region: Tlalpan
         postcode: '14240'
-        country: México
+        country: Mexico
         country_code: MX
       coordinates:
         latitude: '19.2965'

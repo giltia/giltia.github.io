@@ -7,18 +7,18 @@ sections:
   - block: hero
     content:
       title: |
+        Grupo de Investigación
         Voz Maya
-        Research Group
       image:
         filename: welcome.jpg
       text: |
         <br>
 
-        The **Voz Maya Research Group** at [CentroGeo](https://www.centrogeo.org.mx) develops natural language processing technology for **Yucatec Maya**, contributing to the digital preservation and dissemination of this indigenous language of Mexico.
+        El **Grupo de Investigación Voz Maya** de [CentroGeo](https://www.centrogeo.org.mx) desarrolla tecnología de procesamiento de lenguaje natural para la **lengua maya yucateca**, contribuyendo a su preservación y difusión digital.
 
   - block: collection
     content:
-      title: Latest News
+      title: Últimas Noticias
       subtitle:
       text:
       count: 5
@@ -57,7 +57,7 @@ sections:
 
   - block: collection
     content:
-      title: Latest Publications
+      title: Últimas Publicaciones
       text: ""
       count: 5
       filters:
@@ -73,7 +73,7 @@ sections:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
+        {{% cta cta_link="./people/" cta_text="Conoce al equipo →" %}}
     design:
       columns: '1'
 ---

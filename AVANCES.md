@@ -7,7 +7,7 @@ Sitio web académico para el **Grupo de Investigación Voz Maya** de CentroGeo, 
 - **URL final**: https://jazielcarballo.github.io/vozmaya/
 - **Repositorio**: https://github.com/jazielcarballo/vozmaya
 - **GitHub user**: jazielcarballo
-- **Idiomas**: Español (principal) + Inglés
+- **Idiomas**: Inglés (principal) + Español
 
 ---
 
@@ -28,11 +28,23 @@ Sitio web académico para el **Grupo de Investigación Voz Maya** de CentroGeo, 
 - [x] Sitio verificado: compila sin errores (53 páginas ES + 18 páginas EN)
 - [x] Repositorio publicado en GitHub y desplegado vía GitHub Actions
 - [x] Perfil de Alejandro Molina Villegas (líder del grupo) agregado al equipo
+- [x] Inglés establecido como idioma por defecto (URL raíz `/vozmaya/`); español disponible en `/vozmaya/es/`
+- [x] Secciones News/Events/Publications completas en ambos idiomas (antes solo existían en ES)
+- [x] Perfiles del equipo traducidos y disponibles en ambos idiomas
 
 ### Pendiente
 
-- [ ] La página de Equipo en inglés (`/vozmaya/en/people/`) no muestra perfiles: los autores viven en `content/authors/` (idioma ES) y el sitio EN usa `content/en/` como `contentDir`, por lo que Hugo no los encuentra. Pendiente decidir si se traducen los perfiles o se comparten entre idiomas.
 - [ ] Agregar correo de contacto público de Alejandro Molina Villegas (no se encontró uno público; el de su perfil en CentroGeo está protegido contra spam)
+
+### Nota técnica importante: por qué `content/` ahora es inglés
+
+Hugo Blox (con esta versión de Hugo, 0.147.9) tiene un problema cuando el **idioma por defecto** usa un `contentDir` distinto de `content` (p. ej. `content/en`): las páginas de sección (news, people, events, publications) del *otro* idioma dejan de generarse (quedan en 404), aunque el idioma no-default con `contentDir` alterno sí funciona sin problema.
+
+Por eso, al cambiar el idioma por defecto a inglés, se intercambiaron físicamente los directorios:
+- `content/` → ahora contiene el contenido en **inglés** (antes vivía en `content/en/`)
+- `content/es/` → ahora contiene el contenido en **español** (antes vivía en `content/`)
+
+Si en el futuro se quiere volver a español por defecto, hay que repetir el mismo intercambio (mover `content/es/*` a `content/` y viceversa) en vez de solo cambiar `defaultContentLanguage` en `hugo.yaml`.
 
 ---
 
@@ -44,22 +56,24 @@ vozmaya/
 │   └── deploy.yml          # CI/CD para GitHub Pages
 ├── config/_default/
 │   ├── hugo.yaml           # Configuración principal (baseURL, idioma)
-│   ├── languages.yaml      # ES (content/) y EN (content/en/)
+│   ├── languages.yaml      # EN (content/, por defecto) y ES (content/es/)
 │   ├── menus.es.yaml       # Navegación en español
 │   ├── menus.en.yaml       # Navegación en inglés
-│   └── params.yaml         # Apariencia, SEO, footer
-├── content/                # Contenido en español (idioma principal)
-│   ├── _index.md           # Página principal ES
-│   ├── contact/            # Contacto ES
-│   ├── people/             # Equipo ES
-│   ├── post/               # Noticias (ejemplos del template)
+│   └── params.yaml         # Apariencia, SEO, footer (fallback; se sobreescribe por idioma en languages.yaml)
+├── content/                # Contenido en inglés (idioma principal)
+│   ├── _index.md           # Página principal EN
+│   ├── contact/            # Contacto EN
+│   ├── people/             # Equipo EN
+│   ├── post/                # Noticias (ejemplos del template)
 │   ├── publication/        # Publicaciones (ejemplos del template)
-│   ├── event/              # Eventos (ejemplos del template)
+│   ├── event/               # Eventos (ejemplos del template)
 │   ├── authors/admin/      # Perfil de Jaziel Carballo
-│   └── en/                 # Contenido en inglés
-│       ├── _index.md       # Página principal EN
-│       ├── contact/        # Contacto EN
-│       └── people/         # Equipo EN
+│   ├── authors/amolina/    # Perfil de Alejandro Molina Villegas
+│   └── es/                 # Contenido en español
+│       ├── _index.md       # Página principal ES
+│       ├── contact/        # Contacto ES
+│       ├── people/         # Equipo ES
+│       └── authors/        # Perfiles del equipo ES
 └── assets/media/           # Imágenes del sitio
 ```
 
@@ -67,29 +81,33 @@ vozmaya/
 
 ## Secciones disponibles
 
-| Sección | URL ES | URL EN | Estado |
+| Sección | URL EN (por defecto) | URL ES | Estado |
 |---|---|---|---|
-| Inicio | `/vozmaya/` | `/vozmaya/en/` | Configurado |
-| Noticias | `/vozmaya/post/` | `/vozmaya/en/post/` | Ejemplos del template |
-| Equipo | `/vozmaya/people/` | `/vozmaya/en/people/` | Configurado |
-| Publicaciones | `/vozmaya/publication/` | `/vozmaya/en/publication/` | Ejemplos del template |
-| Eventos | `/vozmaya/event/` | `/vozmaya/en/event/` | Ejemplo del template |
-| Contacto | `/vozmaya/contact/` | `/vozmaya/en/contact/` | Configurado |
+| Inicio | `/vozmaya/` | `/vozmaya/es/` | Configurado |
+| Noticias | `/vozmaya/post/` | `/vozmaya/es/post/` | Ejemplos del template |
+| Equipo | `/vozmaya/people/` | `/vozmaya/es/people/` | Configurado |
+| Publicaciones | `/vozmaya/publication/` | `/vozmaya/es/publication/` | Ejemplos del template |
+| Eventos | `/vozmaya/event/` | `/vozmaya/es/event/` | Ejemplo del template |
+| Contacto | `/vozmaya/contact/` | `/vozmaya/es/contact/` | Configurado |
 
 ---
 
 ## Personalización pendiente (recomendada)
 
 ### Contenido a reemplazar
-- **Noticias** (`content/post/`): reemplazar los posts de ejemplo con noticias reales del proyecto
-- **Publicaciones** (`content/publication/`): agregar artículos, tesis y otros trabajos del grupo
-- **Eventos** (`content/event/`): agregar conferencias, talleres y presentaciones
-- **Equipo** (`content/authors/`): agregar perfiles de cada investigador del grupo
+- **Noticias** (`content/post/` y `content/es/post/`): reemplazar los posts de ejemplo con noticias reales del proyecto
+- **Publicaciones** (`content/publication/` y `content/es/publication/`): agregar artículos, tesis y otros trabajos del grupo
+- **Eventos** (`content/event/` y `content/es/event/`): agregar conferencias, talleres y presentaciones
+- **Equipo** (`content/authors/` y `content/es/authors/`): agregar perfiles de cada investigador del grupo
 
 ### Agregar investigadores
-Crear una carpeta por persona en `content/authors/<nombre>/` con:
+Como el sitio es bilingüe con directorios de contenido separados, hay que crear el perfil **en ambos idiomas**:
+- `content/authors/<nombre>/_index.md` (perfil en inglés)
+- `content/es/authors/<nombre>/_index.md` (perfil en español)
+
+Cada uno con:
 - `_index.md` (perfil con nombre, rol, intereses, redes)
-- `avatar.jpg` (foto de perfil)
+- `avatar.jpg` o `avatar.png` (foto de perfil, puede ser la misma en ambos idiomas)
 
 Grupos disponibles en `content/people/index.md`:
 - `Investigadores Principales`
@@ -104,7 +122,7 @@ Reemplazar `assets/media/welcome.jpg` con una imagen representativa del proyecto
 ### Correo de contacto
 Actualizar `vozmaya@centrogeo.edu.mx` en:
 - `content/contact/index.md`
-- `content/en/contact/index.md`
+- `content/es/contact/index.md`
 
 ---
 

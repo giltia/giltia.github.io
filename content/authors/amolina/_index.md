@@ -7,31 +7,31 @@ superuser: false
 
 weight: 1
 
-role: Líder del Grupo Voz Maya
+role: Voz Maya Group Lead
 
 organizations:
   - name: CentroGeo
     url: 'https://www.centrogeo.org.mx'
 
-bio: Investigador por México (Cátedras Conacyt) en el Centro de Investigación en Ciencias de Información Geoespacial (CentroGeo), subsede Yucatán. Sus líneas de investigación incluyen procesamiento de lenguaje natural, minería de datos, geoparsing, aprendizaje de máquina y tecnologías para la lengua maya.
+bio: Cátedras Conacyt researcher at the Centro de Investigación en Ciencias de Información Geoespacial (CentroGeo), Yucatán. His research lines include natural language processing, data mining, geoparsing, machine learning, and technologies for the Maya language.
 
 interests:
-  - Procesamiento de Lenguaje Natural
-  - Geointeligencia Computacional
-  - Minería de Datos
+  - Natural Language Processing
+  - Computational Geointelligence
+  - Data Mining
   - Geoparsing
-  - Aprendizaje de Máquina
-  - Tecnologías para la Lengua Maya
+  - Machine Learning
+  - Maya Language Technologies
 
 education:
   courses:
-    - course: Doctorado en Informática (mención honorífica)
-      institution: Université d'Avignon et des Pays de Vaucluse, Francia
+    - course: PhD in Computer Science (highest honors)
+      institution: Université d'Avignon et des Pays de Vaucluse, France
       year: 2014
-    - course: Maestría en Ciencias de la Computación
+    - course: Master's in Computer Science
       institution: UNAM
       year: 2009
-    - course: Licenciatura en Computación
+    - course: Bachelor's in Computing
       institution: Universidad Autónoma Metropolitana
       year: 2006
 
@@ -49,4 +49,4 @@ user_groups:
   - Investigadores Principales
 ---
 
-Líder del Grupo de Investigación Voz Maya en CentroGeo. Miembro del Sistema Nacional de Investigadores (SNI Nivel I) y miembro fundador de la Asociación Mexicana de Procesamiento de Lenguaje Natural, con experiencia en gobierno mexicano y colaboraciones internacionales en España y Francia.
+Lead of the Voz Maya Research Group at CentroGeo. Member of Mexico's National System of Researchers (SNI Level I) and a founding member of the Mexican Association for Natural Language Processing, with experience in Mexican government and international collaborations in Spain and France.
