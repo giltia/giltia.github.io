@@ -1,0 +1,18 @@
+# Languages
+es:
+  languageCode: es
+  contentDir: content
+  title: Grupo de Investigación Voz Maya
+  params:
+    description: >-
+      Desarrollamos tecnología de procesamiento de lenguaje natural para la
+      lengua maya en CentroGeo.
+
+en:
+  languageCode: en-us
+  contentDir: content/en
+  title: Voz Maya Research Group
+  params:
+    description: >-
+      We develop natural language processing technology for the Maya language
+      at CentroGeo.
