@@ -51,26 +51,6 @@ sections:
       view: card
       columns: '1'
 
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image:
-          filename: coders.jpg
-          filters:
-            brightness: 0.7
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
-
   - block: collection
     content:
       title: Latest Publications
