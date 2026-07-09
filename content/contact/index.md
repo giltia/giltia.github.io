@@ -11,16 +11,17 @@ sections:
       text: |-
         Have questions about the Voz Maya project or interested in collaborating with us? Get in touch.
       email: vozmaya@centrogeo.edu.mx
+      phone: (9996) 88-53-00 y 42, (9994) 06-00-22 y 25
       address:
-        street: Contoy 137, Lomas de Padierna
-        city: Mexico City
-        region: Tlalpan
-        postcode: '14240'
+        street: Laboratorio Nacional de Geointeligencia, Parque Científico Tecnológico Yucatán
+        city: Mérida
+        region: Yucatán
+        postcode: '97302'
         country: Mexico
         country_code: MX
       coordinates:
-        latitude: '19.2965'
-        longitude: '-99.1591'
+        latitude: '21.13087'
+        longitude: '-89.78084'
       autolink: true
       form:
         provider: netlify
