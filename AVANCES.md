@@ -31,6 +31,8 @@ Sitio web académico para el **Grupo de Investigación Voz Maya** de CentroGeo, 
 - [x] Inglés establecido como idioma por defecto (URL raíz `/vozmaya/`); español disponible en `/vozmaya/es/`
 - [x] Secciones News/Events/Publications completas en ambos idiomas (antes solo existían en ES)
 - [x] Perfiles del equipo traducidos y disponibles en ambos idiomas
+- [x] Sección de noticias eliminada del home en ambos idiomas (la página `/post/` sigue accesible desde el menú)
+- [x] Página de contacto actualizada con la ubicación real: CentroGeo Yucatán (Laboratorio Nacional de Geointeligencia, Parque Científico Tecnológico Yucatán, Mérida, CP 97302), teléfonos (9996) 88-53-00 y 42, (9994) 06-00-22 y 25, y mapa apuntando a 21.13087, -89.78084 (coordenadas de OpenStreetMap)
 
 ### Pendiente
 
@@ -126,7 +128,11 @@ Actualizar `vozmaya@centrogeo.edu.mx` en:
 
 ---
 
-## Comandos útiles
+## Entorno de desarrollo
+
+Desde julio 2026 el desarrollo se hace en Windows, con el repo clonado en `C:\Users\Jaziel Carballo\Documents\Claude\web\vozmaya`. En esta máquina **no están instalados Hugo ni Go**, así que no hay vista previa local; los cambios se verifican tras el deploy automático de GitHub Actions.
+
+Comandos del entorno Linux original (por si se retoma ahí):
 
 ```bash
 # Exportar PATH para usar Hugo y Go
