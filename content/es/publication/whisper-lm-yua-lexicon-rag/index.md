@@ -97,3 +97,7 @@ La mejora es **marginal**: el posprocesamiento con LLM y léxico recupera algo d
 - Ajuste fino de Whisper con audio transcrito en maya yucateco.
 - Ampliar las reglas ortográficas (`ORTHO_RULES`) con los errores recurrentes observados en las transcripciones.
 - Ampliar el léxico y experimentar con recuperación selectiva (enviar al prompt solo las entradas relevantes para cada segmento, en lugar de una lista fija).
+
+## Acceso al cuaderno
+
+Si te interesa el cuaderno de Colab, puedes ponerte en contacto con el autor en [jaziel.carballo@gmail.com](mailto:jaziel.carballo@gmail.com).

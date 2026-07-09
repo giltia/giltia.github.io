@@ -97,3 +97,7 @@ The improvement is **marginal**: LLM post-processing with a lexicon recovers som
 - Fine-tune Whisper with transcribed Yucatec Maya audio.
 - Extend the orthographic rules (`ORTHO_RULES`) with recurrent errors observed in the transcriptions.
 - Grow the lexicon and experiment with selective retrieval (sending only the entries relevant to each segment to the prompt, instead of a fixed list).
+
+## Access to the notebook
+
+If you are interested in the Colab notebook, you can contact the author at [jaziel.carballo@gmail.com](mailto:jaziel.carballo@gmail.com).
