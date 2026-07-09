@@ -5,3 +5,6 @@
 /resources/
 public/
 assets/jsconfig.json
+
+# Notebooks locales (contienen claves de API)
+WhisperLM_colab_lexicon_yua_dictionary_rag.ipynb
