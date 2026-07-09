@@ -10,7 +10,7 @@ sections:
         Voz Maya
         Research Group
       image:
-        filename: welcome.jpg
+        filename: imagenVozMaya.jpg
       text: |
         <br>
 
