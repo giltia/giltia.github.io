@@ -1,8 +1,8 @@
-# Avances – Sitio Web Grupo de Investigación Voz Maya
+# Avances – Sitio Web Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial
 
 ## Descripción del proyecto
 
-Sitio web académico para el **Grupo de Investigación Voz Maya** de CentroGeo, desarrollado con Hugo Blox (Academic). El grupo trabaja en tecnología de procesamiento de lenguaje natural para la lengua maya yucateca.
+Sitio web académico para el **Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial** (antes "Voz Maya") de CentroGeo, desarrollado con Hugo Blox (Academic). El grupo trabaja en tecnología de procesamiento de lenguaje natural para la lengua maya yucateca. En inglés: **Languages, Territory and AI Research Group**.
 
 - **URL final**: https://jazielcarballo.github.io/vozmaya/
 - **Repositorio**: https://github.com/jazielcarballo/vozmaya
@@ -34,9 +34,24 @@ Sitio web académico para el **Grupo de Investigación Voz Maya** de CentroGeo, 
 - [x] Sección de noticias eliminada del home en ambos idiomas (la página `/post/` sigue accesible desde el menú)
 - [x] Página de contacto actualizada con la ubicación real: CentroGeo Yucatán (Laboratorio Nacional de Geointeligencia, Parque Científico Tecnológico Yucatán, Mérida, CP 97302), teléfonos (9996) 88-53-00 y 42, (9994) 06-00-22 y 25, y mapa apuntando a 21.13087, -89.78084 (coordenadas de OpenStreetMap)
 
+#### Sesión del 9 de julio de 2026
+
+- [x] Publicación técnica sobre el notebook de Colab Whisper-LM (corrección de transcripciones ASR de maya yucateco con Gemini + léxico de 2,988 entradas), en EN y ES, con sección final para solicitar el notebook por correo. El `.ipynb` local NO se versiona (contiene una API key de Gemini; está en `.gitignore`)
+- [x] Tres publicaciones de Alejandro Molina agregadas (EN y ES): benchmark de similitud de palabras para maya yucateco (*Inteligencia Artificial*, 2025), Mayasoundex (LatinX in AI @ NAACL 2024) y Findings del shared task AmericasNLP 2024
+- [x] Eliminadas las publicaciones de ejemplo del tema (preprint, journal article, conference paper)
+- [x] Eliminadas las dos noticias de ejemplo del tema
+- [x] Evento de ejemplo reemplazado por LxMLS 2026 (16.ª Lisbon Machine Learning School, 20–25 de julio de 2026, IST Lisboa; Jaziel Carballo aceptado como participante)
+- [x] Imagen de portada reemplazada: `imagenVozMaya.jpg` en el bloque hero (original PNG de 8.2 MB redimensionado a 1600px y convertido a JPEG de 327 KB)
+- [x] Favicon reemplazado por el logo de GitHub (octocat) en `assets/media/icon.png`
+- [x] Logotipos de CentroGeo y SECIHTI quitados de la portada (los SVG siguen en `assets/media/logos/`)
+- [x] Grupo renombrado en todo el sitio: portada, título, SEO, footer, contacto, perfil de Alejandro Molina y evento LxMLS
+
 ### Pendiente
 
 - [ ] Agregar correo de contacto público de Alejandro Molina Villegas (no se encontró uno público; el de su perfil en CentroGeo está protegido contra spam)
+- [ ] Eliminar el autor de ejemplo del tema (`content/es/authors/吳恩達/`)
+- [ ] Decidir si se limpia el historial de git: en el commit `5c2234b` se subieron por error archivos locales (PNG original de 8 MB, `qr-lexiconmaya.png` y 4 fotos de `team/`); se quitaron del repo en `34859e4` pero siguen visibles en el historial público. Quitarlos del todo requiere reescribir historial y push forzado
+- [ ] Si el notebook de Colab se quiere publicar, quitar primero la API key de Gemini (y de preferencia rotarla en Google AI Studio)
 
 ### Nota técnica importante: por qué `content/` ahora es inglés
 
@@ -86,10 +101,10 @@ vozmaya/
 | Sección | URL EN (por defecto) | URL ES | Estado |
 |---|---|---|---|
 | Inicio | `/vozmaya/` | `/vozmaya/es/` | Configurado |
-| Noticias | `/vozmaya/post/` | `/vozmaya/es/post/` | Ejemplos del template |
+| Noticias | `/vozmaya/post/` | `/vozmaya/es/post/` | Vacía (ejemplos eliminados) |
 | Equipo | `/vozmaya/people/` | `/vozmaya/es/people/` | Configurado |
-| Publicaciones | `/vozmaya/publication/` | `/vozmaya/es/publication/` | Ejemplos del template |
-| Eventos | `/vozmaya/event/` | `/vozmaya/es/event/` | Ejemplo del template |
+| Publicaciones | `/vozmaya/publication/` | `/vozmaya/es/publication/` | 5 publicaciones reales |
+| Eventos | `/vozmaya/event/` | `/vozmaya/es/event/` | LxMLS 2026 |
 | Contacto | `/vozmaya/contact/` | `/vozmaya/es/contact/` | Configurado |
 
 ---
@@ -97,9 +112,9 @@ vozmaya/
 ## Personalización pendiente (recomendada)
 
 ### Contenido a reemplazar
-- **Noticias** (`content/post/` y `content/es/post/`): reemplazar los posts de ejemplo con noticias reales del proyecto
-- **Publicaciones** (`content/publication/` y `content/es/publication/`): agregar artículos, tesis y otros trabajos del grupo
-- **Eventos** (`content/event/` y `content/es/event/`): agregar conferencias, talleres y presentaciones
+- **Noticias** (`content/post/` y `content/es/post/`): agregar noticias reales del proyecto (la sección quedó vacía)
+- **Publicaciones**: hecho — hay 5 reales; agregar nuevas conforme salgan
+- **Eventos**: hecho — LxMLS 2026; agregar conferencias, talleres y presentaciones futuras
 - **Equipo** (`content/authors/` y `content/es/authors/`): agregar perfiles de cada investigador del grupo
 
 ### Agregar investigadores
@@ -119,7 +134,7 @@ Grupos disponibles en `content/people/index.md`:
 - `Alumni`
 
 ### Imagen de portada
-Reemplazar `assets/media/welcome.jpg` con una imagen representativa del proyecto Voz Maya.
+Hecho: el hero usa `assets/media/imagenVozMaya.jpg`. `welcome.jpg` se conserva porque la página tour la usa de fondo.
 
 ### Correo de contacto
 Actualizar `vozmaya@centrogeo.edu.mx` en:
