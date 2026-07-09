@@ -7,14 +7,14 @@ sections:
   - block: hero
     content:
       title: |
-        Grupo de Investigación
-        Voz Maya
+        Grupo de Investigación en Lenguas,
+        Territorio e Inteligencia Artificial
       image:
         filename: imagenVozMaya.jpg
       text: |
         <br>
 
-        El **Grupo de Investigación Voz Maya** de [CentroGeo](https://www.centrogeo.org.mx) desarrolla tecnología de procesamiento de lenguaje natural para la **lengua maya yucateca**, contribuyendo a su preservación y difusión digital.
+        El **Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial** de [CentroGeo](https://www.centrogeo.org.mx) desarrolla tecnología de procesamiento de lenguaje natural para la **lengua maya yucateca**, contribuyendo a su preservación y difusión digital.
 
   - block: collection
     content:

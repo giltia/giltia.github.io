@@ -9,7 +9,7 @@ sections:
     content:
       title: Contact
       text: |-
-        Have questions about the Voz Maya project or interested in collaborating with us? Get in touch.
+        Have questions about the Languages, Territory and AI Research Group or interested in collaborating with us? Get in touch.
       email: vozmaya@centrogeo.edu.mx
       phone: (9996) 88-53-00 y 42, (9994) 06-00-22 y 25
       address:

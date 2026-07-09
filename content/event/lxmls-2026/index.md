@@ -48,4 +48,4 @@ projects: []
 
 The [Lisbon Machine Learning School (LxMLS)](https://lxmls.github.io/2026/) holds its sixteenth edition in 2026 at Instituto Superior Técnico in Lisbon, Portugal, from July 20th to 25th. It is one of Europe's most recognized machine learning summer schools and is part of the European ELLIS network.
 
-**Jaziel Carballo was accepted to participate in this edition.** The school combines morning lectures with hands-on afternoon labs, poster presentations, and invited talks, covering topics ranging from linear models to transformers, causality, and vision-language models. This training directly strengthens VozMaya's research on language technologies for Yucatec Maya.
+**Jaziel Carballo was accepted to participate in this edition.** The school combines morning lectures with hands-on afternoon labs, poster presentations, and invited talks, covering topics ranging from linear models to transformers, causality, and vision-language models. This training directly strengthens the group's research on language technologies for Yucatec Maya.

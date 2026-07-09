@@ -9,7 +9,7 @@ sections:
     content:
       title: Contacto
       text: |-
-        ¿Tienes preguntas sobre el proyecto Voz Maya o te interesa colaborar con nosotros? Escríbenos.
+        ¿Tienes preguntas sobre el Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial o te interesa colaborar con nosotros? Escríbenos.
       email: vozmaya@centrogeo.edu.mx
       phone: (9996) 88-53-00 y 42, (9994) 06-00-22 y 25
       address:

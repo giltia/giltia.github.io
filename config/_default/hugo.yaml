@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Voz Maya Research Group
+title: Languages, Territory and AI Research Group
 baseURL: 'https://jazielcarballo.github.io/vozmaya/'
 
 ############################

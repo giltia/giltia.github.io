@@ -7,14 +7,14 @@ sections:
   - block: hero
     content:
       title: |
-        Voz Maya
+        Languages, Territory and AI
         Research Group
       image:
         filename: imagenVozMaya.jpg
       text: |
         <br>
 
-        The **Voz Maya Research Group** at [CentroGeo](https://www.centrogeo.org.mx) develops natural language processing technology for **Yucatec Maya**, contributing to the digital preservation and dissemination of this indigenous language of Mexico.
+        The **Languages, Territory and AI Research Group** at [CentroGeo](https://www.centrogeo.org.mx) develops natural language processing technology for **Yucatec Maya**, contributing to the digital preservation and dissemination of this indigenous language of Mexico.
 
   - block: collection
     content:

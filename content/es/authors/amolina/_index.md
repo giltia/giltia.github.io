@@ -7,7 +7,7 @@ superuser: false
 
 weight: 1
 
-role: Líder del Grupo Voz Maya
+role: Líder del Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial
 
 organizations:
   - name: CentroGeo
@@ -49,4 +49,4 @@ user_groups:
   - Investigadores Principales
 ---
 
-Líder del Grupo de Investigación Voz Maya en CentroGeo. Miembro del Sistema Nacional de Investigadores (SNI Nivel I) y miembro fundador de la Asociación Mexicana de Procesamiento de Lenguaje Natural, con experiencia en gobierno mexicano y colaboraciones internacionales en España y Francia.
+Líder del Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial en CentroGeo. Miembro del Sistema Nacional de Investigadores (SNI Nivel I) y miembro fundador de la Asociación Mexicana de Procesamiento de Lenguaje Natural, con experiencia en gobierno mexicano y colaboraciones internacionales en España y Francia.

@@ -7,7 +7,7 @@ superuser: false
 
 weight: 1
 
-role: Voz Maya Group Lead
+role: Languages, Territory and AI Group Lead
 
 organizations:
   - name: CentroGeo
@@ -49,4 +49,4 @@ user_groups:
   - Investigadores Principales
 ---
 
-Lead of the Voz Maya Research Group at CentroGeo. Member of Mexico's National System of Researchers (SNI Level I) and a founding member of the Mexican Association for Natural Language Processing, with experience in Mexican government and international collaborations in Spain and France.
+Lead of the Languages, Territory and AI Research Group at CentroGeo. Member of Mexico's National System of Researchers (SNI Level I) and a founding member of the Mexican Association for Natural Language Processing, with experience in Mexican government and international collaborations in Spain and France.
