@@ -46,6 +46,11 @@ Sitio web académico para el **Grupo de Investigación en Lenguas, Territorio e 
 - [x] Logotipos de CentroGeo y SECIHTI quitados de la portada (los SVG siguen en `assets/media/logos/`)
 - [x] Grupo renombrado en todo el sitio: portada, título, SEO, footer, contacto, perfil de Alejandro Molina y evento LxMLS
 
+#### Sesión del 13 de julio de 2026
+
+- [x] Manuel Morales Almora agregado al equipo como Estudiante de Posgrado, con perfil bilingüe (`content/authors/mmorales/` y `content/es/authors/mmorales/`): rol, bio, intereses, formación (Maestría en Ciencias de Información Geoespacial en CentroGeo 2025–2027; Licenciatura en Estadística, Universidad Veracruzana 2024), GitHub y LinkedIn. Datos tomados de su CV (Google Doc) y bio proporcionada por el usuario
+- [x] Avatar de Manuel generado desde `Foto - ManuelMoralesAlmora.png` (1072×1072 PNG de 1.5 MB → JPEG 800×800 de 80 KB); el PNG original quedó en `.gitignore` para no repetir el error del commit `5c2234b`
+
 ### Pendiente
 
 - [ ] Agregar correo de contacto público de Alejandro Molina Villegas (no se encontró uno público; el de su perfil en CentroGeo está protegido contra spam)
