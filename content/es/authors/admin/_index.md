@@ -8,7 +8,7 @@ superuser: true
 
 weight: 2
 
-role: Especialista en IA aplicada a la educación
+role: Candidato a Doctorado en Ciencias de Información Geoespacial
 
 organizations:
   - name: CentroGeo

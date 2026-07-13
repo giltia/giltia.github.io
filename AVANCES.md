@@ -53,6 +53,7 @@ Sitio web académico para el **Grupo de Investigación en Lenguas, Territorio e 
 - [x] Correo institucional de Manuel (`al.mmalmora@centrogeo.edu.mx`) agregado a ambos perfiles
 - [x] Grupos de la página de equipo en inglés traducidos (antes salían en español): `Principal Investigators`, `Researchers`, `Collaborators`, `Alumni`; los perfiles EN usan ahora esos nombres en `user_groups`
 - [x] Categoría "Estudiantes de Posgrado" eliminada en ambos idiomas; Manuel quedó en Investigadores/Researchers
+- [x] Rol de Jaziel Carballo cambiado a "PhD Candidate in Geospatial Information Sciences" / "Candidato a Doctorado en Ciencias de Información Geoespacial" (antes "AI in Education Specialist")
 
 ### Pendiente
 

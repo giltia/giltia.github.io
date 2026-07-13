@@ -8,7 +8,7 @@ superuser: true
 
 weight: 2
 
-role: AI in Education Specialist
+role: PhD Candidate in Geospatial Information Sciences
 
 organizations:
   - name: CentroGeo
