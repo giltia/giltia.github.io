@@ -54,6 +54,7 @@ Sitio web académico para el **Grupo de Investigación en Lenguas, Territorio e 
 - [x] Grupos de la página de equipo en inglés traducidos (antes salían en español): `Principal Investigators`, `Researchers`, `Collaborators`, `Alumni`; los perfiles EN usan ahora esos nombres en `user_groups`
 - [x] Categoría "Estudiantes de Posgrado" eliminada en ambos idiomas; Manuel quedó en Investigadores/Researchers
 - [x] Rol de Jaziel Carballo cambiado a "PhD Candidate in Geospatial Information Sciences" / "Candidato a Doctorado en Ciencias de Información Geoespacial" (antes "AI in Education Specialist")
+- [x] Navbar brand cambiado a la abreviatura **GILTIA** (Grupo de Investigación en Lenguas, Territorio e IA) mediante override local del partial del tema (`layouts/partials/components/headers/navbar.html`, copiado del commit pinneado `661cadc` de blox-bootstrap) y el nuevo parámetro `header.navbar.brand_text` en `params.yaml`. Los títulos de pestaña y el SEO conservan el nombre completo del grupo
 
 ### Pendiente
 
