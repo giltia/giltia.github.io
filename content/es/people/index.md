@@ -11,7 +11,6 @@ sections:
       user_groups:
           - Investigadores Principales
           - Investigadores
-          - Estudiantes de Posgrado
           - Colaboradores
           - Alumni
       sort_by: Params.weight

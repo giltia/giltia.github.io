@@ -47,7 +47,7 @@ social:
 highlight_name: true
 
 user_groups:
-  - Estudiantes de Posgrado
+  - Researchers
 ---
 
 Statistician (Universidad Veracruzana) and Master's student in Geospatial Information Sciences at CentroGeo. Co-author of *Geocentrality: Quantifying the Territorial Focus of Scientific Discourse* (Communications in Computer and Information Science, in press) and presenter at the XVIII Mexican Congress on Artificial Intelligence. He works with Python, R, Julia, and SQL, and with geospatial tools such as QGIS and PostgreSQL.

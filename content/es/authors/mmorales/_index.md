@@ -47,7 +47,7 @@ social:
 highlight_name: true
 
 user_groups:
-  - Estudiantes de Posgrado
+  - Investigadores
 ---
 
 Licenciado en Estadística por la Universidad Veracruzana y estudiante de la Maestría en Ciencias de Información Geoespacial en CentroGeo. Coautor de *Geocentrality: Quantifying the Territorial Focus of Scientific Discourse* (Communications in Computer and Information Science, en prensa) y ponente en el XVIII Congreso Mexicano de Inteligencia Artificial. Trabaja con Python, R, Julia y SQL, y con herramientas geoespaciales como QGIS y PostgreSQL.

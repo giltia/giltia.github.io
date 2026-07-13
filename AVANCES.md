@@ -50,6 +50,9 @@ Sitio web académico para el **Grupo de Investigación en Lenguas, Territorio e 
 
 - [x] Manuel Morales Almora agregado al equipo como Estudiante de Posgrado, con perfil bilingüe (`content/authors/mmorales/` y `content/es/authors/mmorales/`): rol, bio, intereses, formación (Maestría en Ciencias de Información Geoespacial en CentroGeo 2025–2027; Licenciatura en Estadística, Universidad Veracruzana 2024), GitHub y LinkedIn. Datos tomados de su CV (Google Doc) y bio proporcionada por el usuario
 - [x] Avatar de Manuel generado desde `Foto - ManuelMoralesAlmora.png` (1072×1072 PNG de 1.5 MB → JPEG 800×800 de 80 KB); el PNG original quedó en `.gitignore` para no repetir el error del commit `5c2234b`
+- [x] Correo institucional de Manuel (`al.mmalmora@centrogeo.edu.mx`) agregado a ambos perfiles
+- [x] Grupos de la página de equipo en inglés traducidos (antes salían en español): `Principal Investigators`, `Researchers`, `Collaborators`, `Alumni`; los perfiles EN usan ahora esos nombres en `user_groups`
+- [x] Categoría "Estudiantes de Posgrado" eliminada en ambos idiomas; Manuel quedó en Investigadores/Researchers
 
 ### Pendiente
 
@@ -131,12 +134,9 @@ Cada uno con:
 - `_index.md` (perfil con nombre, rol, intereses, redes)
 - `avatar.jpg` o `avatar.png` (foto de perfil, puede ser la misma en ambos idiomas)
 
-Grupos disponibles en `content/people/index.md`:
-- `Investigadores Principales`
-- `Investigadores`
-- `Estudiantes de Posgrado`
-- `Colaboradores`
-- `Alumni`
+Grupos disponibles (los nombres difieren por idioma; el `user_groups` del perfil debe coincidir con los de la página de equipo de su idioma):
+- EN (`content/people/index.md`): `Principal Investigators`, `Researchers`, `Collaborators`, `Alumni`
+- ES (`content/es/people/index.md`): `Investigadores Principales`, `Investigadores`, `Colaboradores`, `Alumni`
 
 ### Imagen de portada
 Hecho: el hero usa `assets/media/imagenVozMaya.jpg`. `welcome.jpg` se conserva porque la página tour la usa de fondo.

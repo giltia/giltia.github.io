@@ -9,10 +9,9 @@ sections:
     content:
       title: Meet the Team
       user_groups:
-          - Investigadores Principales
-          - Investigadores
-          - Estudiantes de Posgrado
-          - Colaboradores
+          - Principal Investigators
+          - Researchers
+          - Collaborators
           - Alumni
       sort_by: Params.weight
       sort_ascending: true
