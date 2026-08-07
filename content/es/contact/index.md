@@ -11,7 +11,6 @@ sections:
       text: |-
         ¿Tienes preguntas sobre el Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial o te interesa colaborar con nosotros? Escríbenos.
       email: giltiamexico@gmail.com
-      phone: +52 999 158 8558
       address:
         street: Laboratorio Nacional de Geointeligencia, Parque Científico Tecnológico Yucatán
         city: Mérida
@@ -31,24 +30,4 @@ sections:
           captcha: false
     design:
       columns: '1'
-
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image:
-          filename: contact.jpg
-          filters:
-            brightness: 0.8
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
 ---
