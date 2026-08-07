@@ -10,8 +10,8 @@ sections:
       title: Contact
       text: |-
         Have questions about the Languages, Territory and AI Research Group or interested in collaborating with us? Get in touch.
-      email: vozmaya@centrogeo.edu.mx
-      phone: (9996) 88-53-00 y 42, (9994) 06-00-22 y 25
+      email: giltiamexico@gmail.com
+      phone: +52 999 158 8558
       address:
         street: Laboratorio Nacional de Geointeligencia, Parque Científico Tecnológico Yucatán
         city: Mérida

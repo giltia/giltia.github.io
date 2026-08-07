@@ -144,7 +144,7 @@ Grupos disponibles (los nombres difieren por idioma; el `user_groups` del perfil
 Hecho: el hero usa `assets/media/imagenVozMaya.jpg`. `welcome.jpg` se conserva porque la página tour la usa de fondo.
 
 ### Correo de contacto
-Actualizar `vozmaya@centrogeo.edu.mx` en:
+Hecho (7 de agosto de 2026): el contacto ahora es `giltiamexico@gmail.com` con celular +52 999 158 8558 (se quitaron los teléfonos fijos de CentroGeo) en:
 - `content/contact/index.md`
 - `content/es/contact/index.md`
 
