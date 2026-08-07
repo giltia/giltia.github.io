@@ -56,8 +56,22 @@ Sitio web académico para el **Grupo de Investigación en Lenguas, Territorio e 
 - [x] Rol de Jaziel Carballo cambiado a "PhD Candidate in Geospatial Information Sciences" / "Candidato a Doctorado en Ciencias de Información Geoespacial" (antes "AI in Education Specialist")
 - [x] Navbar brand cambiado a la abreviatura **GILTIA** (Grupo de Investigación en Lenguas, Territorio e IA) mediante override local del partial del tema (`layouts/partials/components/headers/navbar.html`, copiado del commit pinneado `661cadc` de blox-bootstrap) y el nuevo parámetro `header.navbar.brand_text` en `params.yaml`. Los títulos de pestaña y el SEO conservan el nombre completo del grupo
 
+#### Sesión del 7 de agosto de 2026
+
+- [x] **Migración a la nueva cuenta GitHub `giltia`**: repo público `giltia/giltia.github.io` con todo el historial de commits; el sitio ahora vive en la raíz `https://giltia.github.io/` (sitio de usuario, sin subruta). El repo viejo `jazielcarballo/vozmaya` sigue existiendo pero ya no se usa
+- [x] Configuración migrada: `baseURL`, URL del repositorio en `params.yaml`, ruta del módulo en `go.mod` y datos de este documento
+- [x] GitHub Pages habilitado en el repo nuevo (build vía Actions); el workflow `deploy.yml` funcionó sin cambios
+- [x] Credenciales: `gh` quedó con dos cuentas (giltia activa, con scope `workflow`; jazielcarballo). Este repo usa `credential.helper` local apuntando a `gh auth git-credential`, así los push salen como giltia sin afectar otros repos
+- [x] **Eduardo Mendoza Vargas agregado al equipo** con perfil bilingüe (`content/authors/emendoza/` y ES): Estudiante de Maestría en Geointeligencia Computacional (CentroGeo, 2027), Ingeniería de Datos (UPY, 2025), bio del usuario (EN íntegra, ES traducida), GitHub (Walotex) y LinkedIn (eduardomv24). Foto `Foto_EMV.jpg` → `avatar.jpg`. Datos del CV `Resume Eduardo Mendoza Vargas ESP.docx` (no versionado)
+- [x] **Fátima Miranda Pestaña agregada al equipo** con perfil bilingüe (`content/authors/fmiranda/` y ES): Data Engineer / Ingeniera de Datos, Ingeniería de Datos (UPY, 2025), bio del perfil profesional de su CV (publicación WASET 2024 sobre detección de maya yucateco y 3er lugar en Datathón Yucatán i6), LinkedIn (`fatimamirandaa`, extraído del enlace embebido del PDF) y correo personal. Foto `IMG_20260709_130346.jpg` → `avatar.jpg`. CV `FatimaMiranda2025_RESUMEeng.pdf` (no versionado)
+- [x] **Sección de equipo unificada en un solo grupo** `Researchers` / `Investigadores`: Jaziel y Alejandro dejaron "Principal Investigators / Investigadores Principales"; las páginas de equipo listan solo ese grupo y ya no muestran encabezados de subgrupos. El orden se mantiene por `weight` (Alejandro 1, Jaziel 2, resto 10)
+- [x] Contacto actualizado en EN y ES: correo `giltiamexico@gmail.com` (antes `vozmaya@centrogeo.edu.mx`); los teléfonos fijos de CentroGeo se eliminaron (el celular +52 999 158 8558 se agregó y luego se quitó a petición del usuario, quedando la página sin teléfono)
+- [x] Bloque markdown con imagen de fondo `contact.jpg` eliminado de las páginas de contacto (aparecía a pantalla completa después de los datos)
+
 ### Pendiente
 
+- [ ] Decidir qué hacer con el repo viejo `jazielcarballo/vozmaya`: su GitHub Pages sigue publicando la versión anterior del sitio en `jazielcarballo.github.io/vozmaya`. Opciones: archivarlo o deshabilitar su Pages
+- [ ] Agregar el GitHub de Fátima si tiene (no venía en su CV) y decidir si se mantiene su correo personal de Gmail en el sitio público
 - [ ] Agregar correo de contacto público de Alejandro Molina Villegas (no se encontró uno público; el de su perfil en CentroGeo está protegido contra spam)
 - [ ] Eliminar el autor de ejemplo del tema (`content/es/authors/吳恩達/`)
 - [ ] Decidir si se limpia el historial de git: en el commit `5c2234b` se subieron por error archivos locales (PNG original de 8 MB, `qr-lexiconmaya.png` y 4 fotos de `team/`); se quitaron del repo en `34859e4` pero siguen visibles en el historial público. Quitarlos del todo requiere reescribir historial y push forzado
@@ -110,12 +124,12 @@ vozmaya/
 
 | Sección | URL EN (por defecto) | URL ES | Estado |
 |---|---|---|---|
-| Inicio | `/vozmaya/` | `/vozmaya/es/` | Configurado |
-| Noticias | `/vozmaya/post/` | `/vozmaya/es/post/` | Vacía (ejemplos eliminados) |
-| Equipo | `/vozmaya/people/` | `/vozmaya/es/people/` | Configurado |
-| Publicaciones | `/vozmaya/publication/` | `/vozmaya/es/publication/` | 5 publicaciones reales |
-| Eventos | `/vozmaya/event/` | `/vozmaya/es/event/` | LxMLS 2026 |
-| Contacto | `/vozmaya/contact/` | `/vozmaya/es/contact/` | Configurado |
+| Inicio | `/` | `/es/` | Configurado |
+| Noticias | `/post/` | `/es/post/` | Vacía (ejemplos eliminados) |
+| Equipo | `/people/` | `/es/people/` | 5 miembros en un solo grupo |
+| Publicaciones | `/publication/` | `/es/publication/` | 5 publicaciones reales |
+| Eventos | `/event/` | `/es/event/` | LxMLS 2026 |
+| Contacto | `/contact/` | `/es/contact/` | Configurado |
 
 ---
 
@@ -136,9 +150,9 @@ Cada uno con:
 - `_index.md` (perfil con nombre, rol, intereses, redes)
 - `avatar.jpg` o `avatar.png` (foto de perfil, puede ser la misma en ambos idiomas)
 
-Grupos disponibles (los nombres difieren por idioma; el `user_groups` del perfil debe coincidir con los de la página de equipo de su idioma):
-- EN (`content/people/index.md`): `Principal Investigators`, `Researchers`, `Collaborators`, `Alumni`
-- ES (`content/es/people/index.md`): `Investigadores Principales`, `Investigadores`, `Colaboradores`, `Alumni`
+Desde el 7 de agosto de 2026 hay un **solo grupo** (el `user_groups` del perfil debe coincidir con el de la página de equipo de su idioma):
+- EN (`content/people/index.md`): `Researchers`
+- ES (`content/es/people/index.md`): `Investigadores`
 
 ### Imagen de portada
 Hecho: el hero usa `assets/media/imagenVozMaya.jpg`. `welcome.jpg` se conserva porque la página tour la usa de fondo.
