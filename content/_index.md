@@ -16,6 +16,24 @@ sections:
 
         The **Languages, Territory and AI Research Group** at [CentroGeo](https://www.centrogeo.org.mx) develops natural language processing technology for **Yucatec Maya**, contributing to the digital preservation and dissemination of this indigenous language of Mexico.
 
+  - block: markdown
+    content:
+      title: Welcome
+      subtitle: ''
+      text: |
+        <img src="/media/amolina-welcome.jpg" alt="Dr. Alejandro Molina Villegas" style="float: right; width: 180px; max-width: 40%; border-radius: 50%; margin: 0 0 1rem 1.5rem;">
+
+        Welcome to the Languages, Territory and AI Research Group (GILTIA) at CentroGeo.
+
+        Our group was born from a conviction: that artificial intelligence should also speak the languages of the peoples who have inhabited this territory for millennia. We develop natural language processing technology for Yucatec Maya — from corpora and classifiers to translation tools — contributing to the digital preservation and revitalization of one of Mexico's living indigenous languages.
+
+        We are a team of researchers and data scientists who believe that technical rigor and social commitment go hand in hand. If our work resonates with you — as a researcher, student, speaker of the language, or ally — I warmly invite you to explore our publications and get in touch. This effort grows with every collaboration.
+
+        **Dr. Alejandro Molina Villegas**<br>
+        Languages, Territory and AI Group Lead
+    design:
+      columns: '1'
+
   - block: collection
     content:
       title: Latest Publications
