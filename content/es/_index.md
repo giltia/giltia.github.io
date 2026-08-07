@@ -25,7 +25,7 @@ sections:
 
         Bienvenidos al Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial (GILTIA) de CentroGeo.
 
-        Nuestro grupo nació de una convicción: que la inteligencia artificial también debe hablar las lenguas de los pueblos que han habitado este territorio durante milenios. Desarrollamos tecnología de procesamiento de lenguaje natural para el maya yucateco — desde corpus y clasificadores hasta herramientas de traducción — contribuyendo a la preservación digital y la revitalización de una de las lenguas indígenas vivas de México.
+        Nuestro grupo nació de una convicción: que la inteligencia artificial también debe hablar las lenguas de los pueblos que han habitado este territorio durante milenios. Desarrollamos tecnología de procesamiento de lenguaje natural para lenguas — desde corpus y clasificadores hasta herramientas de traducción — contribuyendo a su preservación digital y revitalización.
 
         Somos un equipo de investigadores y científicos de datos convencidos de que el rigor técnico y el compromiso social van de la mano. Si nuestro trabajo resuena contigo — como investigador, estudiante, hablante de la lengua o aliado — te invito con gusto a explorar nuestras publicaciones y escribirnos. Este esfuerzo crece con cada colaboración.
 

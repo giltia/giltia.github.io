@@ -25,7 +25,7 @@ sections:
 
         Welcome to the Languages, Territory and AI Research Group (GILTIA) at CentroGeo.
 
-        Our group was born from a conviction: that artificial intelligence should also speak the languages of the peoples who have inhabited this territory for millennia. We develop natural language processing technology for Yucatec Maya — from corpora and classifiers to translation tools — contributing to the digital preservation and revitalization of one of Mexico's living indigenous languages.
+        Our group was born from a conviction: that artificial intelligence should also speak the languages of the peoples who have inhabited this territory for millennia. We develop natural language processing technology for languages — from corpora and classifiers to translation tools — contributing to their digital preservation and revitalization.
 
         We are a team of researchers and data scientists who believe that technical rigor and social commitment go hand in hand. If our work resonates with you — as a researcher, student, speaker of the language, or ally — I warmly invite you to explore our publications and get in touch. This effort grows with every collaboration.
 
