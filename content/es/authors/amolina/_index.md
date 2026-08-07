@@ -46,7 +46,7 @@ social:
 highlight_name: true
 
 user_groups:
-  - Investigadores Principales
+  - Investigadores
 ---
 
 Líder del Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial en CentroGeo. Miembro del Sistema Nacional de Investigadores (SNI Nivel I) y miembro fundador de la Asociación Mexicana de Procesamiento de Lenguaje Natural, con experiencia en gobierno mexicano y colaboraciones internacionales en España y Francia.

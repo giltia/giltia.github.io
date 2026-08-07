@@ -55,7 +55,7 @@ email: 'jaziel.carballo@gmail.com'
 highlight_name: true
 
 user_groups:
-  - Investigadores Principales
+  - Investigadores
 ---
 
 Doctorando en el Laboratorio Nacional de Geointeligencia de CentroGeo, donde investiga el uso de la inteligencia artificial para la preservación del maya yucateco. Ingeniero en Sistemas y Maestro en Ingeniería por el Tecnológico Nacional de México, con especialidad en Docencia por la UADY. Educador certificado por Google Education para Gemini y exbecario del programa Teaching With Purpose de Harvard Business Publishing. En 2026 fue aceptado en la Lisbon Machine Learning School (LxMLS), en Lisboa, Portugal, de la red europea ELLIS dedicada al aprendizaje automático profundo. Con más de 10 años de experiencia, actualmente es docente en la Universidad Anáhuac Mayab.

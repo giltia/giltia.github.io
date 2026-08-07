@@ -9,10 +9,7 @@ sections:
     content:
       title: Meet the Team
       user_groups:
-          - Principal Investigators
           - Researchers
-          - Collaborators
-          - Alumni
       sort_by: Params.weight
       sort_ascending: true
     design:

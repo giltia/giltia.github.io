@@ -9,10 +9,7 @@ sections:
     content:
       title: Nuestro Equipo
       user_groups:
-          - Investigadores Principales
           - Investigadores
-          - Colaboradores
-          - Alumni
       sort_by: Params.weight
       sort_ascending: true
     design:
