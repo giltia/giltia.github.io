@@ -1,4 +1,4 @@
-module github.com/jazielcarballo/vozmaya
+module github.com/giltia/giltia.github.io
 
 go 1.22
 

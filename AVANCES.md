@@ -4,9 +4,9 @@
 
 Sitio web académico para el **Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial** (antes "Voz Maya") de CentroGeo, desarrollado con Hugo Blox (Academic). El grupo trabaja en tecnología de procesamiento de lenguaje natural para la lengua maya yucateca. En inglés: **Languages, Territory and AI Research Group**.
 
-- **URL final**: https://jazielcarballo.github.io/vozmaya/
-- **Repositorio**: https://github.com/jazielcarballo/vozmaya
-- **GitHub user**: jazielcarballo
+- **URL final**: https://giltia.github.io/
+- **Repositorio**: https://github.com/giltia/giltia.github.io
+- **GitHub user**: giltia
 - **Idiomas**: Inglés (principal) + Español
 
 ---
