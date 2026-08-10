@@ -1,8 +1,8 @@
 ---
-title: Jaziel Carballo
+title: Jaziel A. Carballo Tadeo
 
-first_name: Jaziel
-last_name: Carballo
+first_name: Jaziel A.
+last_name: Carballo Tadeo
 
 superuser: true
 
