@@ -2,7 +2,7 @@
 
 ## Descripción del proyecto
 
-Sitio web académico para el **Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial** (antes "Voz Maya") de CentroGeo, desarrollado con Hugo Blox (Academic). El grupo trabaja en tecnología de procesamiento de lenguaje natural para la lengua maya yucateca. En inglés: **Languages, Territory and AI Research Group**.
+Sitio web académico para el **Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial** (antes "Voz Maya") de CentroGeo, desarrollado con Hugo Blox (Academic). El grupo trabaja en tecnología de procesamiento de lenguaje natural para lenguas de bajos recursos (con foco inicial en la lengua maya yucateca). En inglés: **Languages, Territory and AI Research Group**.
 
 - **URL final**: https://giltia.github.io/
 - **Repositorio**: https://github.com/giltia/giltia.github.io
@@ -67,6 +67,14 @@ Sitio web académico para el **Grupo de Investigación en Lenguas, Territorio e 
 - [x] **Sección de equipo unificada en un solo grupo** `Researchers` / `Investigadores`: Jaziel y Alejandro dejaron "Principal Investigators / Investigadores Principales"; las páginas de equipo listan solo ese grupo y ya no muestran encabezados de subgrupos. El orden se mantiene por `weight` (Alejandro 1, Jaziel 2, resto 10)
 - [x] Contacto actualizado en EN y ES: correo `giltiamexico@gmail.com` (antes `vozmaya@centrogeo.edu.mx`); los teléfonos fijos de CentroGeo se eliminaron (el celular +52 999 158 8558 se agregó y luego se quitó a petición del usuario, quedando la página sin teléfono)
 - [x] Bloque markdown con imagen de fondo `contact.jpg` eliminado de las páginas de contacto (aparecía a pantalla completa después de los datos)
+- [x] Foto de Alejandro Molina reemplazada por `IMG_9020.jpg` (commit `f74a662`)
+- [x] Bloque de **bienvenida del Dr. Alejandro Molina** agregado a la portada en EN y ES (texto con foto circular `amolina-welcome.jpg`, firmado como líder del grupo); después se generalizó para hablar de "lenguas" en vez de solo maya yucateco (commits `1737a8a` y `2636d1e`)
+
+#### Sesión del 10 de agosto de 2026
+
+- [x] **Hero y SEO generalizados a lenguas de bajos recursos**: el texto del hero en la portada (EN y ES) y las descripciones meta/SEO (`languages.yaml` y `params.yaml`) ya no se limitan a la lengua maya yucateca; ahora dicen "low-resource languages" / "lenguas de bajos recursos" (commit `e4e21f9`)
+- [x] Foto de perfil de Jaziel reemplazada por `perfilJC.png` → `avatar.png` en `content/authors/admin/` y `content/es/authors/admin/` (se eliminaron los `avatar.jpg` viejos; el tema acepta `avatar.*`) (commit `b0fe34a`)
+- [x] Nombre completo corregido a **Jaziel A. Carballo Tadeo** en los perfiles de autor (`title`, `first_name`, `last_name`) y en las tres menciones de la noticia LxMLS 2026, en ambos idiomas (commit `5d087f3`)
 
 ### Pendiente
 
@@ -108,7 +116,7 @@ vozmaya/
 │   ├── post/                # Noticias (ejemplos del template)
 │   ├── publication/        # Publicaciones (ejemplos del template)
 │   ├── event/               # Eventos (ejemplos del template)
-│   ├── authors/admin/      # Perfil de Jaziel Carballo
+│   ├── authors/admin/      # Perfil de Jaziel A. Carballo Tadeo
 │   ├── authors/amolina/    # Perfil de Alejandro Molina Villegas
 │   └── es/                 # Contenido en español
 │       ├── _index.md       # Página principal ES
