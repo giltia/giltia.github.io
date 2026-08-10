@@ -6,14 +6,14 @@ en:
   title: Languages, Territory and AI Research Group
   params:
     description: >-
-      We develop natural language processing technology for the Maya language
-      at CentroGeo.
+      We develop natural language processing technology for low-resource
+      languages at CentroGeo.
     marketing:
       seo:
         org_name: 'Languages, Territory and AI Research Group – CentroGeo'
         description: >-
-          We develop natural language processing technology for the Maya
-          language at CentroGeo.
+          We develop natural language processing technology for low-resource
+          languages at CentroGeo.
     footer:
       copyright:
         notice: '© {year} Languages, Territory and AI Research Group – CentroGeo'
@@ -25,14 +25,14 @@ es:
   title: Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial
   params:
     description: >-
-      Desarrollamos tecnología de procesamiento de lenguaje natural para la
-      lengua maya en CentroGeo.
+      Desarrollamos tecnología de procesamiento de lenguaje natural para
+      lenguas de bajos recursos en CentroGeo.
     marketing:
       seo:
         org_name: 'Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial – CentroGeo'
         description: >-
           Desarrollamos tecnología de procesamiento de lenguaje natural para
-          la lengua maya en CentroGeo.
+          lenguas de bajos recursos en CentroGeo.
     footer:
       copyright:
         notice: '© {year} Grupo de Investigación en Lenguas, Territorio e Inteligencia Artificial – CentroGeo'
