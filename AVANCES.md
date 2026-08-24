@@ -76,6 +76,25 @@ Sitio web académico para el **Grupo de Investigación en Lenguas, Territorio e 
 - [x] Foto de perfil de Jaziel reemplazada por `perfilJC.png` → `avatar.png` en `content/authors/admin/` y `content/es/authors/admin/` (se eliminaron los `avatar.jpg` viejos; el tema acepta `avatar.*`) (commit `b0fe34a`)
 - [x] Nombre completo corregido a **Jaziel A. Carballo Tadeo** en los perfiles de autor (`title`, `first_name`, `last_name`) y en las tres menciones de la noticia LxMLS 2026, en ambos idiomas (commit `5d087f3`)
 
+#### Sesión del 24 de agosto de 2026
+
+- [x] Ítem del menú principal cambiado de "Noticias"/"News" a **"Noticias | Prensa"** / **"News | Press"** en `menus.yaml`, `menus.es.yaml` y `menus.en.yaml` (commit `231d060`); el h1 de la página de listado (`content/post/_index.md` y `content/es/post/_index.md`, que decía "Latest News" en ambos idiomas) se corrigió igual a **"News | Press"** / **"Noticias | Prensa"** (commit `281b852`)
+- [x] **Sección Noticias | Prensa poblada con 9 notas de prensa reales** sobre la cobertura mediática de la participación de Jaziel Carballo Tadeo en LxMLS 2026 (y una sobre T'aantsil de Alejandro Molina-Villegas), cada una como page bundle en `content/post/<slug>/` y `content/es/post/<slug>/`:
+  1. Diario de Yucatán, "Traductor en maya" (17 ago 2026) — commit `23427d2`
+  2. PuntoMedio, "Buscan que la IA reconozca y procese la lengua maya" (11 ago 2026)
+  3. Telesur (@telesuryuc), post en redes sociales (~10 ago 2026)
+  4. TV Azteca Yucatán, segmento #HechosMeridianoYucatán (14 ago 2026) — los tres anteriores en commit `adb8df1`
+  5. TecNM Campus Mérida, publicación de Facebook **embebida con iframe** (16 ago 2026) — commit `11f5143`, imagen agregada después en `98630ac`
+  6. CentroGeo, anuncio del corpus paralelo maya-español YUA-ES-CCC (1 jul 2026, con enlace interno a la publicación ya existente `/publication/yua-es-corpus/`) — commit `98630ac`
+  7. Radio Fórmula Yucatán, "¡El maya yucateco llega a la inteligencia artificial!" (11 ago 2026) — commit `9ff6fcb`
+  8. GeoInt Difusión (CentroGeo), "Se podría navegar en maya en la web" sobre la plataforma T'aantsil (abr 2024) — commit `6cc74f0`
+  9. TeleYucatán, entrevista en vivo sobre LxMLS 2026 **embebida con el shortcode nativo `{{< youtube >}}`** saltando al minuto 35:23 (start=2123) (~14 ago 2026) — commit `2511b7c`, imagen corregida por la captura real del segmento en `ca2055a`
+
+  Convención establecida: título con el medio antepuesto (`"<Medio>: <titular>"`), `external_link` a la fuente cuando se quiere que la tarjeta enlace directo afuera (con `target="_blank"`), imagen `featured.*` como respaldo visual (captura de la nota, thumbnail de YouTube, etc.) por si la fuente original se cae, y transcripción/resumen del texto en el cuerpo como respaldo adicional. Cuando se prefiere que el lector se quede en el sitio (contenido embebido: iframe de Facebook, video de YouTube), se omite `external_link` para que la tarjeta enlace a la página interna
+- [x] Imágenes fuente de las notas (`press/*.png`, `press/*.jpg`) se mantienen locales sin versionar (igual que otros archivos originales del repo, p. ej. CVs y fotos crudas); solo las copias redimensionadas/usadas (`featured.*`) quedan en `content/`
+- [x] **Miniaturas de la vista `compact`** (usada en Noticias | Prensa) agrandadas: el tema las limitaba a 150px de ancho (80px en móvil) sin importar la resolución de la imagen fuente. Se agregó `layouts/partials/views/compact.html` (override local del partial de `blox-bootstrap`, mismo patrón que el `card.html` ya existente) generando la imagen a 500px en vez de 150px, y en `assets/scss/template.scss` se subió el `max-width` del CSS a 280px/140px (commit `281b852`)
+- [x] Pendiente: `press/secihti.png` quedó sin nota porque el usuario no dio el link de esa fuente
+
 ### Pendiente
 
 - [ ] Decidir qué hacer con el repo viejo `jazielcarballo/vozmaya`: su GitHub Pages sigue publicando la versión anterior del sitio en `jazielcarballo.github.io/vozmaya`. Opciones: archivarlo o deshabilitar su Pages
@@ -133,7 +152,7 @@ vozmaya/
 | Sección | URL EN (por defecto) | URL ES | Estado |
 |---|---|---|---|
 | Inicio | `/` | `/es/` | Configurado |
-| Noticias | `/post/` | `/es/post/` | Vacía (ejemplos eliminados) |
+| Noticias \| Prensa | `/post/` | `/es/post/` | 9 notas de prensa reales |
 | Equipo | `/people/` | `/es/people/` | 5 miembros en un solo grupo |
 | Publicaciones | `/publication/` | `/es/publication/` | 5 publicaciones reales |
 | Eventos | `/event/` | `/es/event/` | LxMLS 2026 |
@@ -144,7 +163,7 @@ vozmaya/
 ## Personalización pendiente (recomendada)
 
 ### Contenido a reemplazar
-- **Noticias** (`content/post/` y `content/es/post/`): agregar noticias reales del proyecto (la sección quedó vacía)
+- **Noticias | Prensa**: hecho — 9 notas de prensa reales (24 de agosto de 2026); agregar nuevas conforme salgan (falta `press/secihti.png`, sin link dado)
 - **Publicaciones**: hecho — hay 5 reales; agregar nuevas conforme salgan
 - **Eventos**: hecho — LxMLS 2026; agregar conferencias, talleres y presentaciones futuras
 - **Equipo** (`content/authors/` y `content/es/authors/`): agregar perfiles de cada investigador del grupo
