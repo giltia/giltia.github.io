@@ -1,5 +1,5 @@
 ---
-title: "Traductor en maya"
+title: "Diario de Yucatán: Traductor en maya"
 date: 2026-08-17
 external_link: "https://www.yucatan.com.mx/merida/2026/08/17/traductor-en-maya.html"
 summary: "El Diario de Yucatán entrevistó al doctorante de CentroGeo Jaziel Carballo-Tadeo sobre su participación en la 16.ª Escuela de Verano de Aprendizaje Automático de Lisboa (LxMLS 2026), donde presentó una propuesta para mejorar la transcripción automática del maya yucateco."

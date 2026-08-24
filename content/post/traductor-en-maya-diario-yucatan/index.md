@@ -1,5 +1,5 @@
 ---
-title: "Traductor en maya (\"Translator in Maya\")"
+title: "Diario de Yucatán: Traductor en maya (\"Translator in Maya\")"
 date: 2026-08-17
 external_link: "https://www.yucatan.com.mx/merida/2026/08/17/traductor-en-maya.html"
 summary: "Diario de Yucatán profiled CentroGeo PhD candidate Jaziel Carballo-Tadeo on his participation in the 16th Lisbon Machine Learning School (LxMLS 2026), where he presented a proposal to improve automatic transcription of Yucatec Maya."
