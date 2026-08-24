@@ -1,5 +1,5 @@
 main:
-  - name: Noticias
+  - name: Noticias | Prensa
     url: post
     weight: 20
   - name: Equipo
