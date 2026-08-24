@@ -2,6 +2,9 @@
 title: "TecNM Campus Mérida: pride in an alumnus's AI and Maya-language research"
 date: 2026-08-16
 summary: "Tecnológico Nacional de México, Campus Mérida, highlighted on Facebook the work of its alumnus Jaziel Aarón Carballo Tadeo, presented at the 16th Lisbon Machine Learning School (LxMLS 2026), on AI technologies to recognize and process Yucatec Maya."
+image:
+  focal_point: 'Smart'
+  caption: 'TecNM-Mérida, Facebook post, August 2026'
 ---
 
 Tecnológico Nacional de México (TecNM), Campus Mérida, posted a message on its Facebook page recognizing its alumnus Jaziel Aarón Carballo Tadeo, a graduate of Computer Systems Engineering, for advancing the development of artificial intelligence technologies capable of recognizing and processing Yucatec Maya — work presented at the 16th Lisbon Machine Learning School (LxMLS 2026) in Portugal. The institution noted that the project combines technological innovation with linguistic preservation and cultural heritage.
