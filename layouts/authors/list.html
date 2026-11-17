@@ -15,7 +15,9 @@
       {{ partial $widget $params }}
     {{end}}
 
+    <pre>DEBUG_SITE={{ site.Language.Name }}|{{ site.Language.Lang }}|{{ site.Language.Locale }}</pre>
     {{ $query := slice }}
+    {{ range where .Pages ".IsNode" false }}<pre>DEBUG_PAGE={{ .RelPermalink }}|{{ .Language.Name }}|{{ .Language.Lang }}|{{ .Lang }}</pre>{{ end }}
     {{ range where .Pages ".IsNode" false }}
       {{ if eq .Language.Name site.Language.Name }}
         {{ $query = $query | append . }}
