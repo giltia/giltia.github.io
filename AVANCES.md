@@ -101,6 +101,7 @@ Sitio web académico para el **Grupo de Investigación en Lenguas, Territorio e 
 - [x] Página de equipo reestructurada con tres grupos, siguiendo el sitio de referencia https://arbioiimas.github.io/ArBio/team.html: **Principal members / Miembros principales** (Alejandro Molina Villegas), **PhD Students / Estudiantes de doctorado** (Jaziel Carballo Tadeo) y **Master's students / Estudiantes de maestría** (Eduardo Mendoza Vargas, Fátima Miranda Pestaña y Manuel Morales Almora). El `user_groups` de los 10 perfiles se reasignó en consecuencia; el orden dentro de cada grupo sigue siendo por `weight`
 - [x] Alejandro Molina Villegas ahora aparece con el tratamiento **"PhD." en inglés** y **"Dr." en español** en el `title` de sus perfiles (`content/authors/amolina/` y `content/es/authors/amolina/`)
 - [x] Deploy corregido: el workflow con `hugo-version: 'latest'` empezó a instalar Hugo v0.170.0, que ya no trae Dart Sass (`error calling toCSS: no Dart Sass binary found in $PATH`). Se fijó **Hugo v0.166.0** en `.github/workflows/deploy.yml` (la versión que compilaba bien en septiembre de 2026)
+- [x] Se agregó `slug: alejandro-molina-villegas` a sus dos perfiles para que el prefijo `PhD.`/`Dr.` no cambiara la URL del perfil (`/author/alejandro-molina-villegas/`)
 
 ### Pendiente
 

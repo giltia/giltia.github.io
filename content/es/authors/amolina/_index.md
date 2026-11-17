@@ -1,5 +1,6 @@
 ---
 title: Dr. Alejandro Molina Villegas
+slug: alejandro-molina-villegas
 first_name: Alejandro
 last_name: Molina Villegas
 
