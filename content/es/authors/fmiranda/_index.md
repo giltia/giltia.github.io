@@ -39,7 +39,7 @@ social:
 highlight_name: true
 
 user_groups:
-  - Investigadores
+  - Estudiantes de maestría
 ---
 
 Ingeniera de Datos con sólida formación en modelado analítico, procesamiento de lenguaje natural y aprendizaje automático, especializada en aplicaciones de datos para contextos desatendidos como lenguas de bajos recursos e inteligencia geoespacial. Destaca en la construcción de soluciones de datos de extremo a extremo — desde pipelines de procesamiento hasta despliegues escalables de aprendizaje automático — con Python, SQL/NoSQL y plataformas en la nube como AWS y GCP, y es reconocida por combinar rigor técnico con prácticas éticas de datos y un fuerte compromiso con el impacto social.

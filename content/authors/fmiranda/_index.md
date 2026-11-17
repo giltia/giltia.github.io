@@ -39,7 +39,7 @@ social:
 highlight_name: true
 
 user_groups:
-  - Researchers
+  - Master's students
 ---
 
 Data Engineer with a solid background in analytical modeling, natural language processing, and machine learning, specialized in data applications for underserved contexts such as low-resource languages and geospatial intelligence. She is skilled in building end-to-end data solutions — from processing pipelines to scalable machine learning deployments — leveraging Python, SQL/NoSQL, and cloud platforms including AWS and GCP, and is recognized for combining technical rigor with ethical data practices and a strong commitment to social impact.

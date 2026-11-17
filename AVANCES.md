@@ -95,6 +95,12 @@ Sitio web académico para el **Grupo de Investigación en Lenguas, Territorio e 
 - [x] **Miniaturas de la vista `compact`** (usada en Noticias | Prensa) agrandadas: el tema las limitaba a 150px de ancho (80px en móvil) sin importar la resolución de la imagen fuente. Se agregó `layouts/partials/views/compact.html` (override local del partial de `blox-bootstrap`, mismo patrón que el `card.html` ya existente) generando la imagen a 500px en vez de 150px, y en `assets/scss/template.scss` se subió el `max-width` del CSS a 280px/140px (commit `281b852`)
 - [x] Pendiente: `press/secihti.png` quedó sin nota porque el usuario no dio el link de esa fuente
 
+#### Sesión del 17 de noviembre de 2026
+
+- [x] Sección **People → Team** en inglés: etiqueta del menú (`menus.en.yaml`) y `title` de `content/people/index.md`. El URL cambió a **`/team/`** (`/es/equipo/` en español, donde el título sigue siendo "Equipo") mediante `url:` en el front matter de las páginas (los directorios `content/people/` no se renombraron); se actualizaron también los menús y los CTA de la portada. Los URLs anteriores `/people/` y `/es/people/` dejarán de existir; `disableAliases: true` está activo en `hugo.yaml`
+- [x] Página de equipo reestructurada con tres grupos, siguiendo el sitio de referencia https://arbioiimas.github.io/ArBio/team.html: **Principal members / Miembros principales** (Alejandro Molina Villegas), **PhD Students / Estudiantes de doctorado** (Jaziel Carballo Tadeo) y **Master's students / Estudiantes de maestría** (Eduardo Mendoza Vargas, Fátima Miranda Pestaña y Manuel Morales Almora). El `user_groups` de los 10 perfiles se reasignó en consecuencia; el orden dentro de cada grupo sigue siendo por `weight`
+- [x] Alejandro Molina Villegas ahora aparece con el tratamiento **"PhD." en inglés** y **"Dr." en español** en el `title` de sus perfiles (`content/authors/amolina/` y `content/es/authors/amolina/`)
+
 ### Pendiente
 
 - [ ] Decidir qué hacer con el repo viejo `jazielcarballo/vozmaya`: su GitHub Pages sigue publicando la versión anterior del sitio en `jazielcarballo.github.io/vozmaya`. Opciones: archivarlo o deshabilitar su Pages
@@ -153,7 +159,7 @@ vozmaya/
 |---|---|---|---|
 | Inicio | `/` | `/es/` | Configurado |
 | Noticias \| Prensa | `/post/` | `/es/post/` | 9 notas de prensa reales |
-| Equipo | `/people/` | `/es/people/` | 5 miembros en un solo grupo |
+| Equipo / Team | `/team/` | `/es/equipo/` | 5 miembros en 3 grupos |
 | Publicaciones | `/publication/` | `/es/publication/` | 5 publicaciones reales |
 | Eventos | `/event/` | `/es/event/` | LxMLS 2026 |
 | Contacto | `/contact/` | `/es/contact/` | Configurado |
@@ -177,9 +183,11 @@ Cada uno con:
 - `_index.md` (perfil con nombre, rol, intereses, redes)
 - `avatar.jpg` o `avatar.png` (foto de perfil, puede ser la misma en ambos idiomas)
 
-Desde el 7 de agosto de 2026 hay un **solo grupo** (el `user_groups` del perfil debe coincidir con el de la página de equipo de su idioma):
-- EN (`content/people/index.md`): `Researchers`
-- ES (`content/es/people/index.md`): `Investigadores`
+Desde el 17 de noviembre de 2026 hay **tres grupos** (el `user_groups` del perfil debe coincidir con el de la página de equipo de su idioma):
+- EN (`content/people/index.md`): `Principal members`, `PhD Students`, `Master's students`
+- ES (`content/es/people/index.md`): `Miembros principales`, `Estudiantes de doctorado`, `Estudiantes de maestría`
+
+Alejandro lleva el prefijo `PhD.` en su perfil EN y `Dr.` en el ES.
 
 ### Imagen de portada
 Hecho: el hero usa `assets/media/imagenVozMaya.jpg`. `welcome.jpg` se conserva porque la página tour la usa de fondo.

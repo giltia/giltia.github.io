@@ -42,7 +42,7 @@ social:
 highlight_name: true
 
 user_groups:
-  - Researchers
+  - Master's students
 ---
 
 I am a Data Engineer and Data Scientist specializing in data architecture, machine learning, and geospatial analysis. I graduated from Universidad Politécnica de Yucatán with a degree in data engineering, and I'm now enrolled in CentroGeo in pursuit of a master's degree in computational geointelligence. I have a track record of successfully streamlining data processes, including creating ETL workflows that cut database load times and data retrieval times, thanks to my extensive proficiency with Python, SQL, and PowerBI.

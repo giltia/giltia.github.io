@@ -52,7 +52,7 @@ sections:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="./people/" cta_text="Conoce al equipo →" %}}
+        {{% cta cta_link="./equipo/" cta_text="Conoce al equipo →" %}}
     design:
       columns: '1'
 ---

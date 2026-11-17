@@ -1,5 +1,5 @@
 ---
-title: Alejandro Molina Villegas
+title: PhD. Alejandro Molina Villegas
 first_name: Alejandro
 last_name: Molina Villegas
 
@@ -46,7 +46,7 @@ social:
 highlight_name: true
 
 user_groups:
-  - Researchers
+  - Principal members
 ---
 
 Lead of the Languages, Territory and AI Research Group at CentroGeo. Member of Mexico's National System of Researchers (SNI Level I) and a founding member of the Mexican Association for Natural Language Processing, with experience in Mexican government and international collaborations in Spain and France.

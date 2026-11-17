@@ -42,7 +42,7 @@ social:
 highlight_name: true
 
 user_groups:
-  - Investigadores
+  - Estudiantes de maestría
 ---
 
 Soy Ingeniero de Datos y Científico de Datos especializado en arquitectura de datos, aprendizaje automático y análisis geoespacial. Egresé de la Universidad Politécnica de Yucatán como Ingeniero de Datos y actualmente curso la Maestría en Geointeligencia Computacional en CentroGeo. Cuento con una trayectoria de optimización exitosa de procesos de datos, incluyendo la creación de flujos ETL que redujeron los tiempos de carga de bases de datos y de recuperación de información, gracias a mi amplio dominio de Python, SQL y PowerBI.

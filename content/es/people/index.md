@@ -1,6 +1,7 @@
 ---
 title: Equipo
 date: 2024-01-01
+url: equipo
 
 type: landing
 
@@ -9,7 +10,9 @@ sections:
     content:
       title: Nuestro Equipo
       user_groups:
-          - Investigadores
+          - Miembros principales
+          - Estudiantes de doctorado
+          - Estudiantes de maestría
       sort_by: Params.weight
       sort_ascending: true
     design:
