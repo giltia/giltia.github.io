@@ -7,7 +7,7 @@ superuser: false
 
 weight: 10
 
-role: Data Engineer
+role: Master's Student
 
 organizations:
   - name: CentroGeo

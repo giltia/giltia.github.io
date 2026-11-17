@@ -7,7 +7,7 @@ superuser: false
 
 weight: 10
 
-role: Ingeniera de Datos
+role: Estudiante de Maestría
 
 organizations:
   - name: CentroGeo
