@@ -15,12 +15,26 @@
       {{ partial $widget $params }}
     {{end}}
 
-    <pre>DEBUG_SITE={{ site.Language.Name }}|{{ site.Language.Lang }}|{{ site.Language.Locale }}</pre>
+    {{ $allowedPrefix := site.LanguagePrefix }}
+    {{ $disallowedPrefixes := slice }}
+    {{ range hugo.Sites }}
+      {{ if and (ne .Language.Name site.Language.Name) .LanguagePrefix }}
+        {{ $disallowedPrefixes = $disallowedPrefixes | append .LanguagePrefix }}
+      {{ end }}
+    {{ end }}
     {{ $query := slice }}
-    {{ range where .Pages ".IsNode" false }}<pre>DEBUG_PAGE={{ .RelPermalink }}|{{ .Language.Name }}|{{ .Language.Lang }}|{{ .Lang }}</pre>{{ end }}
-    {{ range where .Pages ".IsNode" false }}
-      {{ if eq .Language.Name site.Language.Name }}
-        {{ $query = $query | append . }}
+    {{ range $page := where .Pages ".IsNode" false }}
+      {{ $include := true }}
+      {{ if and $allowedPrefix (not (hasPrefix $page.RelPermalink $allowedPrefix)) }}
+        {{ $include = false }}
+      {{ end }}
+      {{ range $disallowedPrefixes }}
+        {{ if hasPrefix $page.RelPermalink . }}
+          {{ $include = false }}
+        {{ end }}
+      {{ end }}
+      {{ if $include }}
+        {{ $query = $query | append $page }}
       {{ end }}
     {{ end }}
     {{ $count := len $query }}
