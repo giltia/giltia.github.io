@@ -102,6 +102,7 @@ Sitio web académico para el **Grupo de Investigación en Lenguas, Territorio e 
 - [x] Alejandro Molina Villegas ahora aparece con el tratamiento **"PhD." en inglés** y **"Dr." en español** en el `title` de sus perfiles (`content/authors/amolina/` y `content/es/authors/amolina/`)
 - [x] Deploy corregido: el workflow con `hugo-version: 'latest'` empezó a instalar Hugo v0.170.0, que ya no trae Dart Sass (`error calling toCSS: no Dart Sass binary found in $PATH`). Se fijó **Hugo v0.166.0** en `.github/workflows/deploy.yml` (la versión que compilaba bien en septiembre de 2026)
 - [x] Se agregó `slug: alejandro-molina-villegas` a sus dos perfiles para que el prefijo `PhD.`/`Dr.` no cambiara la URL del perfil (`/author/alejandro-molina-villegas/`)
+- [x] Distribución de la página Team mejorada en escritorio (`≥992px`) desde `assets/scss/template.scss`: tarjetas en tres columnas iguales y centradas, avatares más grandes y alineados, separadores entre los tres grupos y tipografía de nombres/roles más legible. En móvil se conserva el diseño original del tema
 
 ### Pendiente
 
