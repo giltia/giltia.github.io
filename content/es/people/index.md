@@ -13,6 +13,11 @@ sections:
           - Miembros principales
           - Estudiantes de doctorado
           - Estudiantes de maestría
+      grid_title: Estudiantes
+      group_labels:
+        Miembros principales: Líder del grupo
+        Estudiantes de doctorado: Doctorado
+        Estudiantes de maestría: Maestría
       sort_by: Params.weight
       sort_ascending: true
     design:

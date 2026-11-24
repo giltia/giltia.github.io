@@ -1,0 +1,101 @@
+{{/* Custom override of the Hugo Blox "people" block.
+     Layout: the first user group is shown as featured, full-width horizontal
+     cards; every other group is merged into a single responsive grid where each
+     person's group appears as a badge.
+
+     Optional block options (content.*):
+       grid_title:   heading shown above the grid (e.g. "Students")
+       group_labels: map of user group name -> short badge text
+*/}}
+
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $show_social := $block.design.show_social | default false }}
+{{ $show_interests := $block.design.show_interests | default true }}
+{{ $show_organizations := $block.design.show_organizations | default false }}
+{{ $show_role := $block.design.show_role | default true }}
+{{ $labels := $block.content.group_labels | default dict }}
+
+{{ $sort_by := $block.content.sort_by | default "Params.last_name" }}
+{{ $sort_by = partial "blox-core/functions/get_sort_by_parameter" $sort_by }}
+{{ $sort_order := cond ($block.content.sort_ascending | default true) "asc" "desc" }}
+{{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
+
+{{/* Collect people per group, skipping anyone already shown. */}}
+{{ $seen := slice }}
+{{ $featured := slice }}
+{{ $grid := slice }}
+{{ range $i, $group := $block.content.user_groups }}
+  {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice $group) }}
+  {{ $query = sort $query $sort_by $sort_order }}
+  {{ range $query }}
+    {{ if not (in $seen .File.Dir) }}
+      {{ $seen = $seen | append .File.Dir }}
+      {{ $label := index $labels $group | default (index $labels (lower $group)) | default $group }}
+      {{ $entry := dict "page" . "group" $group "index" $i "label" $label }}
+      {{ if eq $i 0 }}
+        {{ $featured = $featured | append $entry }}
+      {{ else }}
+        {{ $grid = $grid | append $entry }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<div class="team-block">
+  {{ with $block.content.title }}
+    <div class="section-heading text-center mb-4">
+      <h1 class="mb-0">{{ . | markdownify | emojify }}</h1>
+      {{ with $block.content.subtitle }}<p class="mt-1">{{ . | markdownify | emojify }}</p>{{ end }}
+    </div>
+  {{ end }}
+
+  {{ with $block.content.text }}
+    <div class="team-intro">{{ . | emojify | $page.RenderString }}</div>
+  {{ end }}
+
+  {{ range $featured }}
+    {{ $p := .page }}
+    {{ $link := "" }}
+    {{ with site.GetPage (printf "/authors/%s" (path.Base $p.File.Dir)) }}{{ $link = .RelPermalink }}{{ end }}
+    {{ $avatar := ($p.Resources.ByType "image").GetMatch "*avatar*" }}
+    <article class="team-featured">
+      {{ with $avatar }}
+        {{ $img := .Fill "360x360 Center" }}
+        <a class="team-featured__photo" href="{{ $link }}"><img width="180" height="180" loading="lazy" class="avatar {{ if eq $avatar_shape "square" }}avatar-square{{ else }}avatar-circle{{ end }}" src="{{ $img.RelPermalink }}" alt="{{ $p.Title }}"></a>
+      {{ end }}
+      <div class="team-featured__body">
+        <span class="team-badge team-badge--0">{{ .label }}</span>
+        <h2 class="team-featured__name"><a href="{{ $link }}">{{ $p.Title }}</a></h2>
+        {{ if and $show_role $p.Params.role }}<p class="team-role">{{ $p.Params.role | markdownify | emojify }}</p>{{ end }}
+        {{ if and $show_organizations $p.Params.organizations }}<p class="team-org">{{ range $j, $o := $p.Params.organizations }}{{ if $j }} · {{ end }}{{ $o.name }}{{ end }}</p>{{ end }}
+        {{ with $p.Params.bio }}<p class="team-featured__bio">{{ . | markdownify | emojify }}</p>{{ end }}
+        {{ if and $show_interests $p.Params.interests }}<p class="team-interests">{{ delimit $p.Params.interests " · " | markdownify | emojify }}</p>{{ end }}
+        {{ if $show_social }}{{ partial "social_links" $p }}{{ end }}
+      </div>
+    </article>
+  {{ end }}
+
+  {{ if $grid }}
+    {{ with $block.content.grid_title }}<h2 class="team-grid-title">{{ . | markdownify }}</h2>{{ end }}
+    <div class="team-grid">
+      {{ range $grid }}
+        {{ $p := .page }}
+        {{ $link := "" }}
+        {{ with site.GetPage (printf "/authors/%s" (path.Base $p.File.Dir)) }}{{ $link = .RelPermalink }}{{ end }}
+        {{ $avatar := ($p.Resources.ByType "image").GetMatch "*avatar*" }}
+        <article class="team-card">
+          {{ with $avatar }}
+            {{ $img := .Fill "270x270 Center" }}
+            <a href="{{ $link }}"><img width="140" height="140" loading="lazy" class="avatar {{ if eq $avatar_shape "square" }}avatar-square{{ else }}avatar-circle{{ end }}" src="{{ $img.RelPermalink }}" alt="{{ $p.Title }}"></a>
+          {{ end }}
+          <span class="team-badge team-badge--{{ .index }}">{{ .label }}</span>
+          <h3 class="team-card__name"><a href="{{ $link }}">{{ $p.Title }}</a></h3>
+          {{ if and $show_role $p.Params.role }}<p class="team-role">{{ $p.Params.role | markdownify | emojify }}</p>{{ end }}
+          {{ if and $show_interests $p.Params.interests }}<p class="team-interests team-interests--clamp" title="{{ delimit $p.Params.interests ", " }}">{{ delimit $p.Params.interests " · " | markdownify | emojify }}</p>{{ end }}
+          {{ if $show_social }}{{ partial "social_links" $p }}{{ end }}
+        </article>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>

@@ -13,6 +13,11 @@ sections:
           - Principal members
           - PhD Students
           - Master's students
+      grid_title: Students
+      group_labels:
+        Principal members: Group Lead
+        PhD Students: PhD
+        "Master's students": "Master's"
       sort_by: Params.weight
       sort_ascending: true
     design:

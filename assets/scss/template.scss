@@ -19,43 +19,188 @@
   }
 }
 
-// Distribute team members evenly on wide screens
-@media screen and (min-width: 992px) {
-  .people-widget {
-    > .col-md-12 {
-      width: 100%;
-      margin: 1.5rem 0 0.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(0, 0, 0, .1);
+// ---------------------------------------------------------------------------
+// Team page (custom people block: layouts/partials/blocks/people.html)
+// ---------------------------------------------------------------------------
+.team-block {
+  max-width: 1100px;
+  margin: 0 auto;
 
-      h2 {
-        font-size: 1.25rem;
-        margin-bottom: 0;
-      }
+  .avatar {
+    display: block;
+    height: auto;
+    object-fit: cover;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .network-icon {
+    margin: 0.5rem 0 0;
+    padding: 0;
+  }
+}
+
+.team-badge {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #1565c0;
+  background: rgba(21, 101, 192, 0.1);
+
+  &.team-badge--1 {
+    color: #6a1b9a;
+    background: rgba(106, 27, 154, 0.1);
+  }
+
+  &.team-badge--2 {
+    color: #2e7d32;
+    background: rgba(46, 125, 50, 0.1);
+  }
+
+  .dark & {
+    color: #90caf9;
+    background: rgba(144, 202, 249, 0.15);
+
+    &.team-badge--1 {
+      color: #ce93d8;
+      background: rgba(206, 147, 216, 0.15);
     }
 
-    > div.people-person.col-sm-auto {
-      flex: 0 0 calc(33.333% - 2rem);
-      width: calc(33.333% - 2rem);
-      max-width: calc(33.333% - 2rem);
-      margin: 0 1rem 2.5rem;
+    &.team-badge--2 {
+      color: #a5d6a7;
+      background: rgba(165, 214, 167, 0.15);
+    }
+  }
+}
+
+.team-role {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.team-org {
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.team-interests {
+  margin: 0.6rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  opacity: 0.75;
+}
+
+.team-interests--clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// Featured (group lead): horizontal card, stacks on small screens
+.team-featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.75rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+
+  .dark & {
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .avatar {
+    width: 180px;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .team-featured__name {
+    margin: 0.5rem 0 0;
+    font-size: 1.5rem;
+  }
+
+  .team-featured__bio {
+    margin: 0.75rem 0 0;
+    font-size: 0.95rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 2rem 2.5rem;
+
+    .team-featured__photo {
+      flex: 0 0 auto;
     }
 
-    .avatar {
-      display: block;
-      width: 100%;
-      max-width: 180px;
-      height: auto;
-      margin: 0 auto 0.5rem;
+    .network-icon {
+      justify-content: flex-start;
     }
+  }
+}
 
-    .portrait-title h2 {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-    }
+.team-grid-title {
+  margin: 0 0 1.5rem;
+  padding-top: 1.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 
-    .portrait-title h3 {
-      font-size: 0.8rem;
-    }
+  .dark & {
+    border-top-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+// Everyone else: one grid, 1 / 2 / 3 / 4 columns, last row centered
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem 1.5rem;
+}
+
+.team-card {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+
+  .avatar {
+    width: 140px;
+    margin: 0 auto 0.75rem;
+  }
+
+  .team-card__name {
+    margin: 0.5rem 0 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  @media screen and (min-width: 576px) {
+    flex-basis: calc(50% - 0.75rem);
+    max-width: calc(50% - 0.75rem);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+  }
+
+  @media screen and (min-width: 992px) {
+    flex-basis: calc(25% - 1.125rem);
+    max-width: calc(25% - 1.125rem);
   }
 }
