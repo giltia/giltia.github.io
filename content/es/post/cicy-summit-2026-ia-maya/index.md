@@ -19,9 +19,9 @@ Bajo el título «Datos confiables para enseñar a la IA a escuchar el maya», l
 
 ### Auditoría sistemática sobre el corpus T'aantsil
 
-La investigación presentada forma parte de los proyectos de maestría y doctorado de ambos estudiantes, orientados a integrar un modelo de reconocimiento de voz dentro de [T'aantsil](https://taantsil.com.mx), plataforma digital que alberga un corpus lingüístico documentado en 98 comunidades de la Península de Yucatán.
+La investigación presentada forma parte de los proyectos de maestría y doctorado de ambos estudiantes, orientados a integrar un modelo de reconocimiento de voz dentro de [T'aantsil](https://taantsil.com.mx), plataforma digital que alberga un corpus lingüístico documentado en comunidades de la Península de Yucatán.
 
-Para garantizar la calidad de los datos antes del ajuste fino (*fine-tuning*) de los modelos acústicos, el equipo diseñó e implementó una metodología de auditoría supervisada en tres ciclos sobre los 14,505 segmentos de audio del corpus. Combinando indicadores computacionales (tasa de habla y paridad textual bilingüe maya-español) con revisión auditiva humana —sin depender de un modelo acústico previo—, el procedimiento permitió detectar y depurar segmentos vacíos, incompletos, desfasados o duplicados, consolidando un corpus depurado de 14,376 segmentos (99.1 % del conjunto original) listo para el entrenamiento de modelos de IA.
+Para garantizar la calidad de los datos antes del ajuste fino (*fine-tuning*) de los modelos acústicos, el equipo diseñó e implementó una metodología de auditoría supervisada en tres ciclos sobre los segmentos de audio del corpus. Combinando indicadores computacionales (tasa de habla y paridad textual bilingüe maya-español) con revisión auditiva humana —sin depender de un modelo acústico previo—, el procedimiento permitió detectar y depurar segmentos vacíos, incompletos, desfasados o duplicados, consolidando un corpus depurado listo para el entrenamiento de modelos de IA.
 
 ### Impacto científico y preservación lingüística
 

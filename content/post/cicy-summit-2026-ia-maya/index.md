@@ -19,9 +19,9 @@ Under the title “Reliable Data to Teach AI to Listen to Maya,” the talk, dev
 
 ### A systematic audit of the T'aantsil corpus
 
-The research presented is part of both students' master's and doctoral projects, which aim to integrate a speech recognition model into [T'aantsil](https://taantsil.com.mx), a digital platform hosting a linguistic corpus documented in 98 communities across the Yucatán Peninsula.
+The research presented is part of both students' master's and doctoral projects, which aim to integrate a speech recognition model into [T'aantsil](https://taantsil.com.mx), a digital platform hosting a linguistic corpus documented in communities across the Yucatán Peninsula.
 
-To ensure data quality before fine-tuning the acoustic models, the team designed and implemented a three-cycle supervised audit methodology over the corpus's 14,505 audio segments. By combining computational indicators (speech rate and Maya–Spanish bilingual text parity) with human listening review, without relying on a prior acoustic model, the procedure made it possible to detect and clean up empty, incomplete, misaligned, or duplicate segments, consolidating a cleaned corpus of 14,376 segments (99.1% of the original set) ready for training AI models.
+To ensure data quality before fine-tuning the acoustic models, the team designed and implemented a three-cycle supervised audit methodology over the corpus's audio segments. By combining computational indicators (speech rate and Maya–Spanish bilingual text parity) with human listening review, without relying on a prior acoustic model, the procedure made it possible to detect and clean up empty, incomplete, misaligned, or duplicate segments, consolidating a cleaned corpus ready for training AI models.
 
 ### Scientific impact and language preservation
 
